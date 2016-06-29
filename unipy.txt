@@ -1,0 +1,1795 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Exchange Rate Query_Overseas Card-using Service _Global Service_UnionPay International</title>
+<meta name="keywords" content="Exchange Rate Query" >
+<meta name="description" content="Exchange rate enquiry page is unionpay international provides according to the currency exchange rate a service ">
+<link href="/cssYlgj/site.all_en.css" rel="stylesheet" type="text/css" />
+<link href="/cssYlgj/yl_server.css" rel="stylesheet" type="text/css" />
+<script src="/jsYlgj/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/jsYlgj/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
+</head>
+<body>
+   
+		 <!--页头-->
+		
+
+
+
+<!--页头-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+   $(function(){      
+    var linkS="<link rel='icon' href='/images/favicon.png' type='img/x-icon'/>";
+    $("html > head").append(linkS);
+   });   
+</script>
+<link href="/cssYlgj/site.all_en.css" rel="stylesheet" type="text/css"/>
+<div id="header" class="header box">
+    <div class="left"> 
+	<a href="/en/index.shtml" class="mb10"><img id="en_logo" src="/images/header_login.gif" /></a>
+	 <a target="_blank"  href="/en/enserviceCenter/enoverseas/enhotline" class="mb10" style="margin-left:0;"><img src="/images/header_phone_en.gif" /></a> 
+	 <a href="/en/destination/" class="mb10" style="margin-left:0;"><img src="/images/header_travel_tips_en02.png" /></a>
+	 </div>
+    <div class="right">
+        <span class="span1">
+        	<form action="/MainServlet" id="workFormSearch" method="post">
+		    		<input type="hidden" name="go" value="BIZTOOL_SERVICE_PG_FullTextQuery_News"/>
+		    		<input type="hidden" id="indexHidden" name="index" value="6"/>
+		    		<input type="hidden" id="searchFieldHidden" name="searchField" value=""/>
+		    		<input type="hidden" id="languageId" name="languageId" value="1"/>
+            <a id="a1" class="a1" href="javascript:void(0);">Destination</a>
+            <input id="searchField" type="text" value=""/>
+            <a class="a2" href="javascript:void(0);"><img id="en_search" src="/images/header_search.gif" /></a>
+
+            <ul class="ul1">
+                <li><a href="javascript:void(0);">Destination</a></li>
+            	<li><a href="javascript:void(0);">ATM</a></li>
+				<li><a href="javascript:void(0);">Merchant</a></li>
+				<li><a href="javascript:void(0);">Privileges</a></li>
+			    <li><a href="javascript:void(0);">News</a></li>
+                <li><a href="javascript:void(0);">Others</a></li>
+            </ul>
+           </form>
+        </span>
+        
+        <span class="span2">
+            <a id="a2" href="javascript:void(0);"><em>Language</em></a>
+            <ul class="ul2">
+                <li><a href="/en/index.shtml">English</a></li>
+                <li><a href="/cn/index.shtml">简体中文</a></li>
+                <li><a href="/hk">繁體中文</a></li>
+                <li><a href="/kr">한국어</a></li>
+	            <li><a href="/ru">Русский</a></li>
+	            <li><a href="http://www.unionpayintl.com/th/info">ไทย</a></li>
+            </ul>
+        </span>
+        <span class="span3"><a href="http://haigou.unionpay.com/" target="_blank"> Shop The World</a></span>
+        <span class="span4"><a href="http://cn.unionpay.com/" target="_blank">中国银联</a></span>
+    </div>
+</div>
+<!--页头-->
+		<!--页头-->
+	    <!-- 栏目标题  -->
+	     
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<div class="img kv" style="background:none; height:50px;">
+    <div class="img nav">
+        <ul data-controller="SiteNav" class="clearfix">
+            <li>
+                <span class="anchor nobd"><a href="/en/index.shtml"><img src="/images/nav/home_en.png" /></a></span>
+            </li>
+            <li>
+                <span class="anchor"><a href="/en/enaboutUpi/index.shtml"><img src="/images/nav/about_en.png" /><img class="active" src="/images/nav/about_b_en.png" /></a></span>
+                <div class="img sub-nav1 nav1">
+                    <div class="shadow"></div>                    
+                    <dl>
+                        <dt>About UnionPay International</dt>
+                        <dd><a target="_blank"  href="/en/enaboutUpi/encompanyProfile/index.shtml">Company Profile</a></dd>
+                        <dd><a target="_blank"  href="/en/enaboutUpi/ennewsCenter/index.shtml">News Center</a></dd>
+                        <dd><a target="_blank"  href="/en/enaboutUpi/enbrandCenter/index.shtml">Brand Center</a></dd>
+                        <dd><a target="_blank"  href="/en/enaboutUpi/enpartners/index.shtml">Partner Institutions</a></dd>
+                    </dl>
+                  
+                </div>
+            </li>
+            <li>
+                <span class="anchor"><a href="/en/enserviceCenter/index.shtml"><img src="/images/nav/service_en.png" /><img class="active" src="/images/nav/service_b_en.png" /></a></span>
+                <div class="img sub-nav2 nav1">
+                    <div class="shadow"></div>
+                    <dl>
+                        <dt>Global Business</dt>
+                        <dd><a target="_blank"  href="/en/enserviceCenter/enatmQuery">ATM Query</a></dd>
+                        <dd><a target="_blank"  href="/en/enserviceCenter/enmerchantQuery">Selected Merchant Query</a></dd>
+                        <dd><a target="_blank"  href="/en/enserviceCenter/englobalCard">Global UnionPay Card</a></dd>
+                        <dd><a target="_blank"  href="/en/enserviceCenter/englobalOffer">Global Offer</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Cardholder Service</dt>
+                        <dd><a target="_blank"  href="/en/enserviceCenter/enoverseas/index.shtml">Help Center</a></dd>
+                        <dd><a target="_blank"  href="/en/enserviceCenter/englobalService/index.shtml">Services and Benefits</a></dd>
+                        <dd><a target="_blank"  href="/en/enserviceCenter/mobileServer/index.shtml">Scan to Follow</a></dd>
+                    </dl>
+                   
+                </div>
+            </li>
+            <li style="width:247px;">
+                <span class="anchor"><a href="/en/enproducts/index.shtml"><img src="/images/nav/product_en.png" /> <img class="active" src="/images/nav/product_b_en.png" /></a></span>
+                <div class="img sub-nav3 nav1">
+                    <div class="shadow"></div>
+                    <dl>   
+                        <dt>UnionPay Card Products</dt>
+                        <dd><a href="/en/enproducts/encards/index.shtml?style=1">UnionPay Debit Card</a></dd>
+                        <dd><a href="/en/enproducts/encards/index.shtml?style=2">UnionPay Credit Card</a></dd>
+                        <dd><a href="/en/enproducts/encards/index.shtml?style=3">UnionPay Commercial Card</a></dd>
+                        <dd><a href="/en/enproducts/encards/index.shtml?style=4">UnionPay Theme Card</a></dd>
+                        <dd><a href="/en/enproducts/encards/index.shtml?style=5">UnionPay Prepaid Card</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Innovative Products</dt>
+                        <dd><a href="/en/enproducts/eninnovative/index.shtml?style=1">UnionPay IC Card</a></dd>
+                        <dd><a href="/en/enproducts/eninnovative/index.shtml?style=2">Mobile Payment</a></dd>
+                        <dd><a href="/en/enproducts/eninnovative/index.shtml?style=3">E-Commerce Payment</a></dd>
+                    </dl>
+         
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</div>
+	    <!-- 栏目标题  -->
+	    
+	    
+<form name="workForm" method="post" action="/MainServlet">
+<input name="go" value="BIZTOOL_MERCHANT_PG_exchangeRateEn" type="hidden">
+		<!--产品页头-->
+		<!--持卡人服务内容-->
+		<div class="bar">
+		    <div class="left">
+		        <a  href="/en/enserviceCenter/enoverseas/index.shtml"><img src="/images/title_s_2_en.png" class="img"  /></a>
+		    </div>
+		    <div class="right">
+		        <div class="text">
+		            <span></span>
+		            <a class="icon" href="/en/index.shtml">Home Page</a>
+		            <a class="icon" href="/en/enserviceCenter/index.shtml">Service Center</a>
+		            <a class="icon" href="/en/enserviceCenter/enoverseas/index.shtml">Cardholder Service</a>
+		            <a class="icon" href="/en/enserviceCenter/enoverseas/index.shtml">Overseas Card-using Service</a>
+		            <span>Exchange Rate Query</span>
+		        </div>
+		    </div>
+		</div>
+		
+		<div class="qaBox">
+		    <div class="qaBanner"><img src="/images/ratebanner.jpg" alt="Exchange Rate"/></div>
+		    <div class="qaText">
+		        <div class="qaTitle fyh">Welcome to UnionPay Card Exchange Rate Inquiry</div>
+		        <div class=" mt15">
+		         
+		            <p class="gray6">UnionPay applies exchange rates from relatively preferential rates subject to multiple market sources and principles. Exchange rates displayed here are based on the buying and selling rates in the UnionPay system and are exclusive of any charges or markups levied by the Issuer. </p><br>
+		            <p class="gray6 mt5">Please be advised that due to the charges or markups mentioned above and possible rounding differences, the rates displayed here may differ from those shown for individual transaction. </p><br>
+		            <p class="gray6 mt5">The exchange rate applied to a transaction is based on the exchange rate on the transaction date, though under certain circumstances the exchange rate on the settlement date may be applied. (Transaction date is the day on which a transaction is initiated, while settlement date is the day on which UnionPay settles with the acquirer and the issuer.) </p><br>
+		            <p class="gray6 mt5">UnionPay exchange rates vary from Monday to Friday with the Friday exchange rate applying to transactions made on Saturday and Sunday. If there is no unexpected circumstances, some of the European currencies exchange rates are quoted at 16:30 Beijing Time, others at 11:00 Beijing Time.</p><br>
+		            <p class="gray6 mt5">You may consult the Issuer for more information on exchange rates.</p><br>
+		            <p class="gray6 mt5"><i class="red">*</i>The above information is for reference only.</p>
+    
+		        </div>
+		        <div class="rateBox mt20 pl">
+		            <div class="rateTitle fyh gray3 f16 ml2 gray3">Please Choose</div>
+		            <table class="rataTable mt20 mb20 gray3 ml30">
+		                <tr>
+		                    <th style="width:150px;">Settlement Date</th>
+		                    <td><input type="text" name="curDate" id="curDate" class="comInput Wdate" value="2016-06-23"   onFocus="WdatePicker({lang:'en'})"/></td>
+		                </tr>
+		                <tr>
+		                    <th>Base Currency</th>
+		                    <td>
+													<select name="baseCurrency" id="baseCurrency" class="comSelect">
+														<option value="" >Please Choose</option>
+														
+														<option value="CNY" selected>CNY, Yuan Renminbi</option>
+														
+														<option value="EUR" >EUR, Euro</option>
+														
+														<option value="GBP" >GBP, Pound Sterling</option>
+														
+														<option value="HKD" >HKD, Hong Kong Dollar</option>
+														
+														<option value="JPY" >JPY, Yen</option>
+														
+														<option value="MOP" >MOP, Pataca</option>
+														
+														<option value="NZD" >NZD, New Zealand Dollar</option>
+														
+														<option value="SGD" >SGD, Singapore Dollar</option>
+														
+														<option value="THB" >THB, Baht</option>
+														
+														<option value="USD" >USD, U.S.Dollar</option>
+														
+													</select>
+		                    </td>
+		                </tr>
+		                <tr>
+		                    <th>Transaction Currency</th>
+		                    <td>
+													<select name="transactionCurrency" id="transactionCurrency" class="comSelect">
+														<option value="" >Please Choose</option>
+														
+														<option value="AED" selected>AED, U.A.E. Dirham</option>
+														
+														<option value="AFN" >AFN, Afghani</option>
+														
+														<option value="AOA" >AOA, Kwanza</option>
+														
+														<option value="ARS" >ARS, Argentine Peso</option>
+														
+														<option value="AUD" >AUD, Australian Dollar</option>
+														
+														<option value="AZN" >AZN, Azerbaijanian Manat</option>
+														
+														<option value="BDT" >BDT, Taka</option>
+														
+														<option value="BGN" >BGN, Bulgarian Lev</option>
+														
+														<option value="BHD" >BHD, Bahraini Dinar</option>
+														
+														<option value="BND" >BND, Brunei Dollar</option>
+														
+														<option value="BRL" >BRL, Brazilian Real</option>
+														
+														<option value="BSD" >BSD, Bahamian Dollar</option>
+														
+														<option value="BWP" >BWP, Pula</option>
+														
+														<option value="BYR" >BYR, Belarussian Ruble</option>
+														
+														<option value="CAD" >CAD, Canadian Dollar</option>
+														
+														<option value="CDF" >CDF, Franc Congolais</option>
+														
+														<option value="CHF" >CHF, Swiss Franc</option>
+														
+														<option value="CLP" >CLP, Chilean Peso</option>
+														
+														<option value="CNY" >CNY, Yuan Renminbi</option>
+														
+														<option value="COP" >COP, Colombian Peso</option>
+														
+														<option value="CRC" >CRC, Costa Rican Colon</option>
+														
+														<option value="CUC" >CUC, Cuban Conv Peso</option>
+														
+														<option value="CZK" >CZK, Czech Koruna</option>
+														
+														<option value="DKK" >DKK, Danish Krone</option>
+														
+														<option value="DZD" >DZD, Algerian Dinar</option>
+														
+														<option value="EGP" >EGP, Egyptian Pound</option>
+														
+														<option value="ETB" >ETB, Ethiopian Birr</option>
+														
+														<option value="EUR" >EUR, Euro</option>
+														
+														<option value="FJD" >FJD, Fiji Dollar</option>
+														
+														<option value="GBP" >GBP, Pound Sterling</option>
+														
+														<option value="GEL" >GEL, Lari</option>
+														
+														<option value="GHS" >GHS, Cedi</option>
+														
+														<option value="GMD" >GMD, Dalasi</option>
+														
+														<option value="GNF" >GNF, Guinea Franc</option>
+														
+														<option value="HKD" >HKD, Hong Kong Dollar</option>
+														
+														<option value="HUF" >HUF, Forint</option>
+														
+														<option value="IDR" >IDR, Rupiah</option>
+														
+														<option value="ILS" >ILS, New Israeli Sheqel</option>
+														
+														<option value="INR" >INR, Indian Rupee</option>
+														
+														<option value="ISK" >ISK, Iceland Krona</option>
+														
+														<option value="JOD" >JOD, Jordanian Dinar</option>
+														
+														<option value="JPY" >JPY, Yen</option>
+														
+														<option value="KES" >KES, Kenyan Shilling</option>
+														
+														<option value="KGS" >KGS, Som</option>
+														
+														<option value="KMF" >KMF, Comoro Franc</option>
+														
+														<option value="KRW" >KRW, Won</option>
+														
+														<option value="KWD" >KWD, Kuwaiti Dinar</option>
+														
+														<option value="KZT" >KZT, Tenge</option>
+														
+														<option value="LAK" >LAK, Kip</option>
+														
+														<option value="LBP" >LBP, Lebanese Pound</option>
+														
+														<option value="LKR" >LKR, Sri Lanka Rupee</option>
+														
+														<option value="MAD" >MAD, Moroccan Dirham</option>
+														
+														<option value="MGA" >MGA, Malagasy Ariary</option>
+														
+														<option value="MMK" >MMK, Myanmar Kyat</option>
+														
+														<option value="MNT" >MNT, Tugrik</option>
+														
+														<option value="MOP" >MOP, Pataca</option>
+														
+														<option value="MRO" >MRO, Ouguiya</option>
+														
+														<option value="MUR" >MUR, Mauritius Rupee</option>
+														
+														<option value="MVR" >MVR, Rufiyaa</option>
+														
+														<option value="MWK" >MWK, Kwacha</option>
+														
+														<option value="MXN" >MXN, Mexican Peso</option>
+														
+														<option value="MYR" >MYR, Malaysian Ringgit</option>
+														
+														<option value="NGN" >NGN, Naira</option>
+														
+														<option value="NOK" >NOK, Norwegian Krone</option>
+														
+														<option value="NPR" >NPR, Nepalese Rupee</option>
+														
+														<option value="NZD" >NZD, New Zealand Dollar</option>
+														
+														<option value="OMR" >OMR, Rial Omani</option>
+														
+														<option value="PEN" >PEN, Nuevo Sol</option>
+														
+														<option value="PGK" >PGK, Kina</option>
+														
+														<option value="PHP" >PHP, Philippine Peso</option>
+														
+														<option value="PKR" >PKR, Pakistan Rupee</option>
+														
+														<option value="PLN" >PLN, Zloty</option>
+														
+														<option value="QAR" >QAR, Qatari Rial</option>
+														
+														<option value="RON" >RON, LEU</option>
+														
+														<option value="RUB" >RUB, Russian Ruble</option>
+														
+														<option value="RWF" >RWF, Rwanda Franc</option>
+														
+														<option value="SAR" >SAR, Saudi Riyal</option>
+														
+														<option value="SCR" >SCR, Seychelles Rupee</option>
+														
+														<option value="SDG" >SDG, Sudanese Pound</option>
+														
+														<option value="SEK" >SEK, Swedish Krona</option>
+														
+														<option value="SGD" >SGD, Singapore Dollar</option>
+														
+														<option value="SLL" >SLL, Leone</option>
+														
+														<option value="SRD" >SRD, Suriname Dollar</option>
+														
+														<option value="SSP" >SSP, South Sudanese Pound</option>
+														
+														<option value="SYP" >SYP, Syrian Pound</option>
+														
+														<option value="THB" >THB, Baht</option>
+														
+														<option value="TJS" >TJS, Somoni</option>
+														
+														<option value="TOP" >TOP, Pa'anga</option>
+														
+														<option value="TRY" >TRY, Turkish Lira</option>
+														
+														<option value="TWD" >TWD, New Taiwan Dollar</option>
+														
+														<option value="TZS" >TZS, Tanzanian Shilling</option>
+														
+														<option value="UAH" >UAH, Ukrainian Hryvnia</option>
+														
+														<option value="UGX" >UGX, Uganda Shilling</option>
+														
+														<option value="USD" >USD, U.S.Dollar</option>
+														
+														<option value="UYU" >UYU, Peso Uruguayo</option>
+														
+														<option value="UZS" >UZS, Uzbekistan Sum</option>
+														
+														<option value="VEF" >VEF, Bolivar Fuerte</option>
+														
+														<option value="VND" >VND, Dong</option>
+														
+														<option value="VUV" >VUV, Vatu</option>
+														
+														<option value="XAF" >XAF, CFA Franc BEAC</option>
+														
+														<option value="XOF" >XOF, CFA Franc BCEAO</option>
+														
+														<option value="XPF" >XPF, CFP Franc</option>
+														
+														<option value="YER" >YER, Yemeni Rial</option>
+														
+														<option value="ZAR" >ZAR, Rand</option>
+														
+														<option value="ZMK" >ZMK, Zambian Kwacha</option>
+														
+														<option value="ZMW" >ZMW, New Zambian Kwacha</option>
+														
+													</select>
+		                    </td>
+		                </tr>
+		                <tr>
+		                	<td colspan="2">
+		                	
+		                		The exchange rate you inquired is: 1&nbsp;AED&nbsp;=&nbsp;
+		                		1.7986&nbsp;CNY
+		                	
+		                	</td>
+		                </tr>
+		            </table>
+		            <a href="javascript:submitDo();" class="chaxunBtn"><img src="/images/chaxunbtn_en.png" class="img" /></a> </div>
+		    </div>
+		    <br style="clear:both;"/>
+		</div>
+		<!--持卡人服务内容-->
+  </form>
+  
+		 <!--页尾-->
+		
+
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script language=JavaScript src="/js/ajax.js"></script>
+<script language="JavaScript" src="/js/common.js"></script>
+<SCRIPT type="text/javascript" src="/js/formValidator.js"></SCRIPT>
+<link href="/cssYlgj/vise.css" rel="stylesheet" type="text/css" />
+<style>
+.menu1 ul .li7b {width:189px; background:url(/images/zcfw/mobile/en/menu_li7b.png) no-repeat 10px 50%;}
+.menu1 ul .li3b {width:255px;}
+.menu1 ul .li3f {width:255px;}
+.menu1 ul{width:1189px;}
+.menu1{width:1189px;}
+.menu1 ul .li7f {background: url("/images/zcfw/menu_li7f.png") no-repeat scroll 10px 50% #fff;width: 200px;}
+
+.ewm_best{ margin:0 auto; width:1133px; height:300px; position:relative; font-size:16px;overflow:hidden;font-family: arial;}
+.ewm_best a{color:#626060;}
+.ewm_best a:hover{ color:#4EACD8;}
+.ewm1_best{ margin:-46px 0 0 66px;}
+.ewm2_best{ margin:-23px 0 0 393px;}
+.ewm3_best{ margin:-26px 0 0 641px;}
+.ewm4_best{ margin:-46px 0 0 934px;}
+.ewm_href{ display:block;text-align:center; width:167px;}
+</style>
+<form name="workForm_Bottom" method="post" >
+      <!--页尾-->
+<div class="footer">
+    <div class="menu" id="menu4foot">
+        <div class="menu1">
+            <ul>
+                <li id="menu1_a1" class="img li1b"><a class="ab" href="javascript:;">Global UnionPay Card</a></li>
+                <li id="menu1_a2" class="img li2b"><a class="ab1" href="javascript:;">ATM Query</a>
+                <a href="http://www.unionpayintl.com/en/enserviceCenter/enoverseas/notice_en.shtml" class="ATM_tip"><img src="/images/ATM_tip_en.png" alt=""></a>
+                </li>
+                <li id="menu1_a3" class="img li3b"><a class="ab" href="javascript:;">Selected Merchant Query</a></li>
+                <li id="menu1_a4" class="img li7b"><a class="img" href="javascript:;"></a></li>
+                <li class="img li5b"><a target="_blank" href="/en/enserviceCenter/enoverseas/index.shtml">Help Center</a></li>
+                <li class="img li4b"><a target="_blank" href="/en/enserviceCenter/englobalOffer">Global Offer</a></li>
+            </ul>
+            <div id="menu1_show1" class="menu1_show1">
+                <div class="left">
+                    <div class="map">
+                        <img src="/images/map_en/YaZhou.gif" width="645" height="300" usemap="#MapZhou" border="0" id="AreaMap" alt="Asia"/>
+                        <map name="MapZhou" id="MapZhou">
+                            <area href="javascript:;" onclick="ET.AreaChange('YaZhou')"  shape="poly" coords="226,77,317,80,327,110,308,175,265,200,212,166,183,120" />
+                            <area href="javascript:;" onclick="ET.AreaChange('OuZhou')"  shape="poly" coords="169,126,60,89,125,34,217,21,346,49,214,72" />
+                            <area href="javascript:;" onclick="ET.AreaChange('DaYang')"  shape="poly" coords="269,224,344,182,375,245,327,281,278,270" />
+                            <area href="javascript:;" onclick="ET.AreaChange('FeiZhou')" shape="poly" coords="169,139,57,96,39,167,115,266,161,203" />
+                            <area href="javascript:;" onclick="ET.AreaChange('MeiZhou')" shape="poly" coords="384,36,600,16,491,126,471,156,442,169,428,167,379,91" />
+                            <area href="javascript:;" onclick="ET.AreaChange('MeiZhou')" shape="poly" coords="439,181,490,148,550,196,494,295" />
+                        </map>
+                    </div>
+                </div>
+                <div class="right">
+                    <ol class="ol_txt" id="MapTxt" data-controller="MapButtons">
+                        <li data-value="YaZhou" style="border:none;"><a id="ol_txt1" class="ab af" href="javascript:;">Asia</a></li>
+                        <li data-value="OuZhou"><a id="ol_txt2" class="ab" href="javascript:;">Europe</a></li> 
+                        <li data-value="MeiZhou"><a id="ol_txt3" class="ab" href="javascript:;">America</a></li>                     
+                        <li data-value="DaYang"><a id="ol_txt4" class="ab" href="javascript:;">Oceania</a></li>
+                        <li data-value="FeiZhou"><a id="ol_txt5" class="ab" href="javascript:;">Africa</a></li>                        
+                    </ol>
+                    <div id="MapTxtList">
+                        <ol data-value="YaZhou" id="ol_text1" class="ol_text">
+                        <li><a href="/column/en/enCard/en_asia/en_TheChineseMainland/index.shtml">The Chinese Mainland</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_asia/en_Afghanistan/index.shtml">Afghanistan</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_asia/en_Azerbaijan/index.shtml">Azerbaijan</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_asia/en_Bahrain/index.shtml">Bahrain</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_asia/en_Bengal/index.shtml">Bengal</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_asia/en_Brunei/index.shtml">Brunei</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_asia/en_Cambodia/index.shtml">Cambodia</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_asia/en_Georgia/index.shtml">Georgia</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_asia/en_HongkongChina/index.shtml">Hongkong China</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_asia/en_India/index.shtml">India</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_asia/en_Indonesia/index.shtml">Indonesia</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_asia/en_Iraq/index.shtml">Iraq</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_asia/en_Israel/index.shtml">Israel</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_asia/en_Japan/index.shtml">Japan</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_asia/en_Jordan/index.shtml">Jordan</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_asia/en_Kazakhstan/index.shtml">Kazakhstan</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_asia/en_Korea/index.shtml">Korea</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_asia/en_Kuwait/index.shtml">Kuwait</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_asia/en_Kyrgyzstan/index.shtml">Kyrgyzstan</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_asia/en_Laos/index.shtml">Laos</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_asia/en_Lebanon/index.shtml">Lebanon</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_asia/en_MacauChina/index.shtml">Macau China</a></li>
+                        	
+                        </ol>
+                        <ol data-value="OuZhou" id="ol_text2" class="ol_text">
+                        	
+                        		<li><a href="/column/en/enCard/en_europe/en_Austria/index.shtml">Austria</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_europe/en_Belgium/index.shtml">Belgium</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_europe/en_Belorussia/index.shtml">Belorussia</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_europe/en_Britain/index.shtml">Britain</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_europe/en_Bulgaria/index.shtml">Bulgaria</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_europe/en_Cyprus/index.shtml">Cyprus</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_europe/en_Czech/index.shtml">Czech</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_europe/en_Denmark/index.shtml">Denmark</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_europe/en_FaroeIslands/index.shtml">Faroe Islands</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_europe/en_Finland/index.shtml">Finland</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_europe/en_France/index.shtml">France</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_europe/en_Germany/index.shtml">Germany</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_europe/en_Gibraltar/index.shtml">Gibraltar</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_europe/en_Greece/index.shtml">Greece</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_europe/en_Guernsey/index.shtml">Guernsey</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_europe/en_Hungary/index.shtml">Hungary</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_europe/en_Iceland/index.shtml">Iceland</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_europe/en_Ireland/index.shtml">Ireland</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_europe/en_IslandofJersey/index.shtml">Island of Jersey</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_europe/en_IsleofMan/index.shtml">Isle of Man</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_europe/en_Italy/index.shtml">Italy</a></li>
+                        	
+                        </ol>
+                         <ol data-value="MeiZhou" id="ol_text5" class="ol_text">
+                        	
+                        		<li><a href="/column/en/enCard/en_america/en_Argentina/index.shtml">Argentina</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_america/en_Bahamas/index.shtml">Bahamas</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_america/en_Brazil/index.shtml">Brazil</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_america/en_Canada/index.shtml">Canada</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_america/en_Colombia/index.shtml">Colombia</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_america/en_CostaRica/index.shtml">Costa Rica</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_america/en_Cuba/index.shtml">Cuba</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_america/en_Ecuador/index.shtml">Ecuador</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_america/en_Greenland/index.shtml">Greenland </a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_america/en_Martinique/index.shtml">Martinique</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_america/en_Mexico/index.shtml">Mexico</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_america/en_Peru/index.shtml">Peru</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_america/en_PuertoRico/index.shtml">Puerto Rico</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_america/en_Surinam/index.shtml">Surinam</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_america/en_USA/index.shtml">USA</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_america/en_USVI/index.shtml">USVI</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_america/en_Venezuela/index.shtml">Venezuela</a></li>
+                        	
+                        </ol>
+                        
+                        <ol data-value="DaYang" id="ol_text3" class="ol_text">
+                        	
+                        		<li><a href="/column/en/enCard/en_oceania/en_Australia/index.shtml">Australia</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_oceania/en_Fiji/index.shtml">Fiji</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_oceania/en_FrenchPolynesia/index.shtml">French Polynesia</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_oceania/en_Guam/index.shtml">Guam</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_oceania/en_Micronesia/index.shtml">Micronesia</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_oceania/en_NewZealand/index.shtml">New Zealand</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_oceania/en_Niue/index.shtml">Niue</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_oceania/en_PapuaNewGuinea/index.shtml">Papua New Guinea</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_oceania/en_Saipan/index.shtml">Saipan</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_oceania/en_SolomonIslands/index.shtml">Solomon Islands</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_oceania/en_TheCookIslands/index.shtml">The Cook Islands</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_oceania/en_TISS/index.shtml">TISS</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_oceania/en_Tonga/index.shtml">Tonga</a></li>
+                        	
+                        		<li><a href="/column/en/enCard/en_oceania/en_Vanuatu/index.shtml">Vanuatu</a></li>
+                        	
+                        </ol>
+                        <ol data-value="FeiZhou" id="ol_text4" class="ol_text">
+                        	
+                        		<li><a href="/column/en/enCard/en_africa/en_Angola/index.shtml">
+                        		
+                        		       Angola
+                        		    
+                        		</a>
+                        		</li>
+                        	
+                        		<li><a href="/column/en/enCard/en_africa/en_Benin/index.shtml">
+                        		
+                        		       Benin
+                        		    
+                        		</a>
+                        		</li>
+                        	
+                        		<li><a href="/column/en/enCard/en_africa/en_Botswana/index.shtml">
+                        		
+                        		       Botswana
+                        		    
+                        		</a>
+                        		</li>
+                        	
+                        		<li><a href="/column/en/enCard/en_africa/en_BurkinaFaso/index.shtml">
+                        		
+                        		       Burkina Faso
+                        		    
+                        		</a>
+                        		</li>
+                        	
+                        		<li><a href="/column/en/enCard/en_africa/en_Cameroon/index.shtml">
+                        		
+                        		       Cameroon
+                        		    
+                        		</a>
+                        		</li>
+                        	
+                        		<li><a href="/column/en/enCard/en_africa/en_Chad/index.shtml">
+                        		
+                        		       Chad
+                        		    
+                        		</a>
+                        		</li>
+                        	
+                        		<li><a href="/column/en/enCard/en_africa/en_Comoros/index.shtml">
+                        		
+                        		       Comoros
+                        		    
+                        		</a>
+                        		</li>
+                        	
+                        		<li><a href="/column/en/enCard/en_africa/en_Congo(Kinshasa)/index.shtml">
+                        		
+                        		       Congo
+                        		     
+                        		</a>
+                        		</li>
+                        	
+                        		<li><a href="/column/en/enCard/en_africa/en_Cotedivoire/index.shtml">
+                        		
+                        		       Cote divoire
+                        		    
+                        		</a>
+                        		</li>
+                        	
+                        		<li><a href="/column/en/enCard/en_africa/en_Djibouti/index.shtml">
+                        		
+                        		       Djibouti
+                        		    
+                        		</a>
+                        		</li>
+                        	
+                        		<li><a href="/column/en/enCard/en_africa/en_Egypt/index.shtml">
+                        		
+                        		       Egypt
+                        		    
+                        		</a>
+                        		</li>
+                        	
+                        		<li><a href="/column/en/enCard/en_africa/en_EquatorialGuinea/index.shtml">
+                        		
+                        		       Equatorial Guinea
+                        		    
+                        		</a>
+                        		</li>
+                        	
+                        		<li><a href="/column/en/enCard/en_africa/en_Ethiopia/index.shtml">
+                        		
+                        		       Ethiopia
+                        		    
+                        		</a>
+                        		</li>
+                        	
+                        		<li><a href="/column/en/enCard/en_africa/en_Gambia/index.shtml">
+                        		
+                        		       Gambia
+                        		    
+                        		</a>
+                        		</li>
+                        	
+                        		<li><a href="/column/en/enCard/en_africa/en_Ghana/index.shtml">
+                        		
+                        		       Ghana
+                        		    
+                        		</a>
+                        		</li>
+                        	
+                        		<li><a href="/column/en/enCard/en_africa/en_Guinea/index.shtml">
+                        		
+                        		       Guinea
+                        		    
+                        		</a>
+                        		</li>
+                        	
+                        		<li><a href="/column/en/enCard/en_africa/en_Kenya/index.shtml">
+                        		
+                        		       Kenya
+                        		    
+                        		</a>
+                        		</li>
+                        	
+                        		<li><a href="/column/en/enCard/en_africa/en_Lesotho/index.shtml">
+                        		
+                        		       Lesotho
+                        		    
+                        		</a>
+                        		</li>
+                        	
+                        		<li><a href="/column/en/enCard/en_africa/en_Madagascar/index.shtml">
+                        		
+                        		       Madagascar
+                        		    
+                        		</a>
+                        		</li>
+                        	
+                        		<li><a href="/column/en/enCard/en_africa/en_Malawi/index.shtml">
+                        		
+                        		       Malawi
+                        		    
+                        		</a>
+                        		</li>
+                        	
+                        		<li><a href="/column/en/enCard/en_africa/en_Mali/index.shtml">
+                        		
+                        		       Mali
+                        		    
+                        		</a>
+                        		</li>
+                        	
+                        </ol>
+                       
+                    </div>
+                    <div class="btn mt10"><a href="/en/enserviceCenter/englobalCard"><img src="/images/btn_1_en.gif" /></a></div>
+                </div>
+            </div>
+            <div id="menu1_show2" class="menu1_show2">
+            	<div class="txt">
+            		For overseas ATM cash withdrawals with UnionPay cards , please follow the related stipulations at "<a target="_blank" href="/en/enserviceCenter/enoverseas/notice_en.shtml">Service Center - Overseas Card-using Service - Card-using Notice</a>".
+                </div>
+                <div class="txt">For more information, please contact UnionPay International Customer Service Representative at
+                  <img src="/images/icon_2.gif" />(the Chinese mainland) or via <a target="_blank" href="/en/enserviceCenter/enoverseas/enhotline/index.shtml">other hotlines</a>(outside the Chinese mainland).
+                </div>
+                 <div class="border" style="padding-bottom:35px;border-bottom:1px dotted #000;">
+                   <span class="span1">Enter Keywords</span>
+                   <span class="span2">
+                    <input type="text" id="searchField_atmf" name="searchField_atmf" value="">
+                    <a href="javascript:submitDo_atmf();"><img id="en_ATM_search" src="/images/btn_2.gif"></a>
+                    </span>
+                </div>
+                <div class="text">
+                    <dl class="dl1">
+                        <dt>Country/Region</dt>
+                        <dd>
+													
+						<div class="special_country">
+								<input type="text" class="countryInps" id="countryInps" placeholder="name">
+								<input type="text" name="countryId_I_ATM" id="countryId_I_ATM" style="display: none;">
+							</div>
+
+							<div class="specialInfoEn"></div>
+                        </dd>
+                        <script>
+							$(function(){
+								var countryInfo = [];
+								//获取国家：中文名、英文名、拼音、id
+								
+											countryInfo.push("Afghanistan"+"!@#"+"2013739427");
+								
+											countryInfo.push("Angola"+"!@#"+"2013862429");
+								
+											countryInfo.push("Argentina"+"!@#"+"2013479937");
+								
+											countryInfo.push("Australia"+"!@#"+"2013613784");
+								
+											countryInfo.push("Austria"+"!@#"+"2013858603");
+								
+											countryInfo.push("Azerbaijan"+"!@#"+"2017029946");
+								
+											countryInfo.push("Bahamas"+"!@#"+"2013862408");
+								
+											countryInfo.push("Bahrain"+"!@#"+"2013858690");
+								
+											countryInfo.push("Belarus"+"!@#"+"2013362434");
+								
+											countryInfo.push("Belgium"+"!@#"+"2013858614");
+								
+											countryInfo.push("Bengal"+"!@#"+"2013858200");
+								
+											countryInfo.push("Benin"+"!@#"+"2013858264");
+								
+											countryInfo.push("Botswana"+"!@#"+"2013858272");
+								
+											countryInfo.push("Brazil"+"!@#"+"2013488055");
+								
+											countryInfo.push("Britain"+"!@#"+"2013858591");
+								
+											countryInfo.push("Brunei"+"!@#"+"2014533578");
+								
+											countryInfo.push("Bulgaria"+"!@#"+"2013862414");
+								
+											countryInfo.push("Burkina Faso"+"!@#"+"2013858279");
+								
+											countryInfo.push("Burundi"+"!@#"+"2015971645");
+								
+											countryInfo.push("Cambodia"+"!@#"+"2013858173");
+								
+											countryInfo.push("Cameroon "+"!@#"+"2013858345");
+								
+											countryInfo.push("Canada"+"!@#"+"2013520712");
+								
+											countryInfo.push("Chad"+"!@#"+"2013858517");
+								
+											countryInfo.push("Colombia"+"!@#"+"2013826712");
+								
+											countryInfo.push("Congo"+"!@#"+"2013456290");
+								
+											countryInfo.push("Costa Rica"+"!@#"+"2013506461");
+								
+											countryInfo.push("Cote divoire"+"!@#"+"2013858360");
+								
+											countryInfo.push("Cuba"+"!@#"+"2013507412");
+								
+											countryInfo.push("Cyprus"+"!@#"+"2013862405");
+								
+											countryInfo.push("Czech Republic"+"!@#"+"2013684418");
+								
+											countryInfo.push("Denmark"+"!@#"+"2013862423");
+								
+											countryInfo.push("Djibouti"+"!@#"+"2013456300");
+								
+											countryInfo.push("Egypt"+"!@#"+"2013831386");
+								
+											countryInfo.push("Equatorial Guinea"+"!@#"+"2013858288");
+								
+											countryInfo.push("Ethiopia"+"!@#"+"2017028569");
+								
+											countryInfo.push("Faroe Islands"+"!@#"+"2013862435");
+								
+											countryInfo.push("Fiji"+"!@#"+"2013858539");
+								
+											countryInfo.push("Finland"+"!@#"+"2013862441");
+								
+											countryInfo.push("France"+"!@#"+"2013647112");
+								
+											countryInfo.push("French Polynesia"+"!@#"+"2013862411");
+								
+											countryInfo.push("Gambia "+"!@#"+"2013858308");
+								
+											countryInfo.push("Georgia"+"!@#"+"2017034417");
+								
+											countryInfo.push("Germany"+"!@#"+"2013858551");
+								
+											countryInfo.push("Ghana"+"!@#"+"2013858326");
+								
+											countryInfo.push("Gibraltar"+"!@#"+"2013862459");
+								
+											countryInfo.push("Greece"+"!@#"+"2016992316");
+								
+											countryInfo.push("Greenland"+"!@#"+"2013862438");
+								
+											countryInfo.push("Guam"+"!@#"+"2013858523");
+								
+											countryInfo.push("Guernsey"+"!@#"+"2013862462");
+								
+											countryInfo.push("Guinea"+"!@#"+"2013858314");
+								
+											countryInfo.push("Hongkong"+"!@#"+"2013475229");
+								
+											countryInfo.push("Hungary"+"!@#"+"2013735526");
+								
+											countryInfo.push("Iceland"+"!@#"+"2013846500");
+								
+											countryInfo.push("Indonesia"+"!@#"+"2013322965");
+								
+											countryInfo.push("Iraq"+"!@#"+"2013742188");
+								
+											countryInfo.push("Ireland"+"!@#"+"2013862456");
+								
+											countryInfo.push("Island of Jersey"+"!@#"+"2013862417");
+								
+											countryInfo.push("Isle of Man"+"!@#"+"2013862468");
+								
+											countryInfo.push("Israel"+"!@#"+"2015326683");
+								
+											countryInfo.push("Italy"+"!@#"+"2013858572");
+								
+											countryInfo.push("Japan"+"!@#"+"2013236326");
+								
+											countryInfo.push("Jordan"+"!@#"+"2013742243");
+								
+											countryInfo.push("Kazakhstan"+"!@#"+"2013600500");
+								
+											countryInfo.push("Kenya"+"!@#"+"2013457900");
+								
+											countryInfo.push("Korea"+"!@#"+"2013290969");
+								
+											countryInfo.push("Kuwait"+"!@#"+"2013862356");
+								
+											countryInfo.push("Kyrghyzstan"+"!@#"+"2013858245");
+								
+											countryInfo.push("Laos"+"!@#"+"2013858181");
+								
+											countryInfo.push("Lebanon"+"!@#"+"2013740955");
+								
+											countryInfo.push("Lesotho"+"!@#"+"2013858370");
+								
+											countryInfo.push("Liechtenstein"+"!@#"+"2013858636");
+								
+											countryInfo.push("Luxembourg"+"!@#"+"2013862453");
+								
+											countryInfo.push("Macau"+"!@#"+"2013479344");
+								
+											countryInfo.push("Madagascar "+"!@#"+"2013858390");
+								
+											countryInfo.push("Malawi"+"!@#"+"2013858398");
+								
+											countryInfo.push("Malaysia"+"!@#"+"2013329877");
+								
+											countryInfo.push("Maldives"+"!@#"+"2013858189");
+								
+											countryInfo.push("Mali"+"!@#"+"2013858404");
+								
+											countryInfo.push("Malta"+"!@#"+"2013862471");
+								
+											countryInfo.push("Martinique"+"!@#"+"2013858629");
+								
+											countryInfo.push("Mauritania"+"!@#"+"2013858410");
+								
+											countryInfo.push("Mauritius"+"!@#"+"2013461169");
+								
+											countryInfo.push("Mexico"+"!@#"+"2013576938");
+								
+											countryInfo.push("Monaco"+"!@#"+"2013858651");
+								
+											countryInfo.push("Mongolia"+"!@#"+"2013820064");
+								
+											countryInfo.push("Morocco"+"!@#"+"2013858418");
+								
+											countryInfo.push("Myanmar"+"!@#"+"2013328752");
+								
+											countryInfo.push("Nepal"+"!@#"+"2013858217");
+								
+											countryInfo.push("Netherlands"+"!@#"+"2013862420");
+								
+											countryInfo.push("New Zealand"+"!@#"+"2013630442");
+								
+											countryInfo.push("Niger"+"!@#"+"2013858430");
+								
+											countryInfo.push("Nigeria"+"!@#"+"2013858440");
+								
+											countryInfo.push("Niue"+"!@#"+"2013862444");
+								
+											countryInfo.push("Norway"+"!@#"+"2013862474");
+								
+											countryInfo.push("Oman"+"!@#"+"2013862432");
+								
+											countryInfo.push("Pakistan"+"!@#"+"2013351837");
+								
+											countryInfo.push("Palestine"+"!@#"+"2013862359");
+								
+											countryInfo.push("Papau New Guinea"+"!@#"+"2013858531");
+								
+											countryInfo.push("Peru"+"!@#"+"2013553108");
+								
+											countryInfo.push("Philippines"+"!@#"+"2013338510");
+								
+											countryInfo.push("Poland"+"!@#"+"2013632437");
+								
+											countryInfo.push("Portugal"+"!@#"+"2013858659");
+								
+											countryInfo.push("Puerto Rico"+"!@#"+"2013862426");
+								
+											countryInfo.push("Qatar"+"!@#"+"2013858706");
+								
+											countryInfo.push("Reunion Island"+"!@#"+"2013858302");
+								
+											countryInfo.push("Russia"+"!@#"+"2013355542");
+								
+											countryInfo.push("Rwanda"+"!@#"+"2013858381");
+								
+											countryInfo.push("Saipan"+"!@#"+"2013862347");
+								
+											countryInfo.push("San Marino"+"!@#"+"2013858674");
+								
+											countryInfo.push("Senegal"+"!@#"+"2013858457");
+								
+											countryInfo.push("Seychelles"+"!@#"+"2013858468");
+								
+											countryInfo.push("Sierra Leone"+"!@#"+"2013858450");
+								
+											countryInfo.push("Singapore"+"!@#"+"2013327097");
+								
+											countryInfo.push("Slovakia"+"!@#"+"2013862402");
+								
+											countryInfo.push("Slovenia"+"!@#"+"2013862477");
+								
+											countryInfo.push("South Africa"+"!@#"+"2013464872");
+								
+											countryInfo.push("South Sudan"+"!@#"+"2013858424");
+								
+											countryInfo.push("Spain"+"!@#"+"2013700607");
+								
+											countryInfo.push("Sri Lanka"+"!@#"+"2013327785");
+								
+											countryInfo.push("sultan"+"!@#"+"2013858485");
+								
+											countryInfo.push("Surinam"+"!@#"+"2013597744");
+								
+											countryInfo.push("Swaziland "+"!@#"+"2013858476");
+								
+											countryInfo.push("Sweden"+"!@#"+"2013862399");
+								
+											countryInfo.push("Switzerland"+"!@#"+"2013858666");
+								
+											countryInfo.push("Taiwan"+"!@#"+"2016870410");
+								
+											countryInfo.push("Tajikistan"+"!@#"+"2013863137");
+								
+											countryInfo.push("Tanzania"+"!@#"+"2013858494");
+								
+											countryInfo.push("Thailand"+"!@#"+"2013327415");
+								
+											countryInfo.push("The Chinese Mainland"+"!@#"+"2014872909");
+								
+											countryInfo.push("Togo"+"!@#"+"2013858296");
+								
+											countryInfo.push("Tonga"+"!@#"+"2013862465");
+								
+											countryInfo.push("Turkey"+"!@#"+"2013853264");
+								
+											countryInfo.push("Uganda"+"!@#"+"2013858503");
+								
+											countryInfo.push("Union of Comoros"+"!@#"+"2013858353");
+								
+											countryInfo.push("United Arab Emirates"+"!@#"+"2013739860");
+								
+											countryInfo.push("USA"+"!@#"+"2013548869");
+								
+											countryInfo.push("Uzbekistan"+"!@#"+"2013862447");
+								
+											countryInfo.push("Vanuatu"+"!@#"+"2013862450");
+								
+											countryInfo.push("Venezuela"+"!@#"+"2013597875");
+								
+											countryInfo.push("Vietnam"+"!@#"+"2013841011");
+								
+											countryInfo.push("Yemen"+"!@#"+"2013741963");
+								
+											countryInfo.push("Zambia"+"!@#"+"2013858511");
+								
+											countryInfo.push("Zimbabwe"+"!@#"+"2013858336");
+								
+								
+								$('.countryInps').focus(function(){
+									$(".specialInfoEn").show();
+									var countryInfoVal = $(this).val();
+									if (countryInfoVal == '') {
+										var kkst = '';
+										for (var i=0;i<countryInfo.length;i++){
+											kkst += "<div class='countryInp' countryId='"+countryInfo[i].split("!@#")[1]+"'>"+countryInfo[i].split("!@#")[0]+"</div>";
+										}
+										$(".specialInfoEn").html(kkst);
+										// document.getElementById('info').innerHTML = kkst;
+									};
+								});
+
+								$('#countryInps').click(function (event) {    
+									event.stopPropagation();  //取消事件冒泡
+								});
+								// 点击空白处或者自身隐藏弹出层，下面分别为滑动和淡出效果。    
+								$(document).click(function (event) { $('.specialInfoEn').hide()});
+								$(".menu1_show2").click(function (event) { $('.specialInfoEn').hide()});
+								$('.specialInfoEn').click(function (event) { $(this).hide() });
+
+								$(".specialInfoEn").on('click', 'div.countryInp', function(){
+									var textVal = $(this).text();
+									$("#countryInps").val(textVal);
+									$("#countryId_I_ATM").val($(this).attr("countryId"));
+									$("#countryInps").attr("countryId",$(this).attr("countryId"));
+									// $(".specialInfo").empty();
+									$(".specialInfoEn").hide();
+									//子级（大区、城市联动）
+									RefreshChildrenCity_I($("#countryInps"),document.getElementById('provinceId_I_ATM'),document.getElementById('cityId_I_ATM')); 
+									RefreshBank3_I();
+								})
+
+								$('.countryInps').keyup(function(){	
+									var countryArr = new Array();
+									var countryInfoVal = $(this).val();
+
+									var pattern = new RegExp('^'+countryInfoVal, 'i');
+
+									for (var i = 0; i < countryInfo.length; i++) {
+										if(pattern.test(countryInfo[i])){
+											countryArr[i] = countryInfo[i];
+										}
+									}
+									var kk = "";
+									for (var n = 0; n < countryArr.length; n++) {
+										if(countryArr[n]!=undefined){
+											kk += "<div class='countryInp' countryId='"+countryArr[n].split("!@#")[1]+"'>"+countryArr[n].split("!@#")[0]+"</div>";
+										}
+									}
+									$('.specialInfoEn').html('');
+									$('.specialInfoEn').append(kk);
+
+								})
+								// 判断当前浏览器是否为谷歌浏览器 是谷歌浏览器的话 改变 类 specialInfoEn 的bottom
+								var isChrome = navigator.userAgent.toLowerCase().match(/chrome/) != null;
+								if (isChrome) {
+									$(".specialInfoEn").css("bottom","142px");
+								}
+
+							})
+						</script>
+                    </dl>
+                    <dl class="dl2">
+                        <dt>Region/Province/State</dt>
+                        <dd>
+													<select name="provinceId_I_ATM" id="provinceId_I_ATM"  
+														onChange="RefreshChildrenCity_I(this,document.getElementById('cityId_I_ATM'),null); RefreshBank3_I();">
+														<option value="" >Please Choose</option>
+													</select>
+                        </dd>
+                    </dl>
+                    <dl class="dl3">
+                        <dt>City</dt>
+                        <dd>
+													<select name="cityId_I_ATM" id="cityId_I_ATM" onChange="RefreshBank3_I()">
+														<option value="" >Please Choose</option>
+													</select>
+                        </dd>
+                    </dl>
+                    <dl class="dl4">
+                        <dt>Bank or Institution</dt>
+                        <dd>
+													<select name="bank_I_ATM" id="bank_I_ATM" >
+														<option value="" >Please Choose</option>
+													</select>
+                        </dd>
+                    </dl>
+                    <dl class="dl5">
+                        <dt>Address</dt>
+                        <dd><input name="address_I_ATM" id="address_I_ATM" class="input1" type="text" /></dd>
+                    </dl>
+                    <dl class="dl6">
+                        <dt>Chip Card Acceptance <img src="/images/icon_3.gif" /></dt>
+                        <dd><input class="input2" type="radio" name="chipFlag_I_ATM" value="1" />Yes<input class="input2" type="radio" name="chipFlag_I_ATM" value="0"/>No</dd>
+                    </dl>
+					  
+                    <dl style="position:relative;margin-top:8px;">
+                    	<a href="javascript:submitDo_I_ATM();"><img src="/images/btn_3_en.gif" /></a>
+                    	<div style="display:none;position:absolute;left:170px;top:10px;width:230px;" id="load_animation_I_ATM">
+								<img src="/image/animated_loading.gif" style="vertical-align:middle;"/>&nbsp;Searching now, Please wait...
+					   </div> 
+                    </dl>
+                </div>
+                <div style="color:#666; font-size:12px; padding:0 20px;">Since magnetic stripe is necessary for inserting bank cards at most ATMs overseas, and this norm may not be changed in the short-term, we recommend that cardholders carry UnionPay magnetic stripe cards or UnionPay composite cards (with chip at the front and magnetic stripe at the back) when traveling abroad, so as to ensure convenient and smooth usage at ATMs and POS terminals.</div>
+                
+            </div>
+            <div id="menu1_show3" class="menu1_show3">
+                <div class="border" style="padding-bottom:30px;border-bottom:1px dotted #000;">                
+                    <span class="span1">Enter Keywords</span>
+                    <span class="span2">
+                    <input type="text" id="searchField_mf" name="searchField_mf" value="">
+                    <a href="javascript:submitDo_mf();"><img src="/images/btn_2.gif"></a>
+                    </span>
+                    <div class="btns">
+                        <a href="javascript:submitDoShortcut_I(1);"><span>Shopping</span></a>
+                        <a href="javascript:submitDoShortcut_I(2);"><span>Dining</span></a>
+                        <a href="javascript:submitDoShortcut_I(3);"><span>Privilege</span></a>
+                        <a href="javascript:submitDoShortcut_I(4);"><span>Discount</span></a>
+                        <a href="javascript:submitDoShortcut_I(5);"><span>Gift</span></a>
+                    </div>                                       
+                </div>
+                <div class="text fix">
+                <dl class="dl1">
+                        <dt>Country/Region</dt>
+                        <dd>
+                         
+							<div class="special_country02">
+								<input type="text" class="countryInps02 special_countryInps02" id="countryInps02" placeholder="name">
+								<input type="text" name="countryId_I_Merchant" id="countryId_I_Merchant" style="display: none;">
+							</div>
+
+							<div class="specialInfoEn02"></div>
+                        </dd>
+                        <script>
+							$(function(){
+								var countryInfo02 = [];
+								//获取国家：中文名、英文名、拼音、id
+								
+											countryInfo02.push("Australia"+"!@#"+"2014478215");
+								
+											countryInfo02.push("Belgium"+"!@#"+"2013849637");
+								
+											countryInfo02.push("Britain"+"!@#"+"2013847734");
+								
+											countryInfo02.push("Canada"+"!@#"+"2014750808");
+								
+											countryInfo02.push("Fiji"+"!@#"+"2014757893");
+								
+											countryInfo02.push("France"+"!@#"+"2013850607");
+								
+											countryInfo02.push("Germany "+"!@#"+"2013849614");
+								
+											countryInfo02.push("Holand"+"!@#"+"2013849581");
+								
+											countryInfo02.push("Hong Kong China"+"!@#"+"2013847374");
+								
+											countryInfo02.push("Indonesia"+"!@#"+"2013847724");
+								
+											countryInfo02.push("Ireland"+"!@#"+"2014796575");
+								
+											countryInfo02.push("Italy"+"!@#"+"2014796591");
+								
+											countryInfo02.push("Japan"+"!@#"+"2013849026");
+								
+											countryInfo02.push("Kenya"+"!@#"+"2015644330");
+								
+											countryInfo02.push("Korea"+"!@#"+"2013849434");
+								
+											countryInfo02.push("Macau China"+"!@#"+"2014082628");
+								
+											countryInfo02.push("Malaysia"+"!@#"+"2013849304");
+								
+											countryInfo02.push("Monaco"+"!@#"+"2013850911");
+								
+											countryInfo02.push("Portugal"+"!@#"+"2014862098");
+								
+											countryInfo02.push("Singapore"+"!@#"+"2013847686");
+								
+											countryInfo02.push("Spain"+"!@#"+"2013849180");
+								
+											countryInfo02.push("Sri Lanka"+"!@#"+"2016634389");
+								
+											countryInfo02.push("Sweden"+"!@#"+"2016212307");
+								
+											countryInfo02.push("Switzerland"+"!@#"+"2014511035");
+								
+											countryInfo02.push("Tahiti"+"!@#"+"2014757937");
+								
+											countryInfo02.push("Taiwan China"+"!@#"+"2016750165");
+								
+											countryInfo02.push("Thailand"+"!@#"+"2014460805");
+								
+											countryInfo02.push("The Chinese Mainland"+"!@#"+"2014133811");
+								
+											countryInfo02.push("United Arab Emirates"+"!@#"+"2013849659");
+								
+											countryInfo02.push("USA"+"!@#"+"2013847815");
+								
+											countryInfo02.push("Vietnam"+"!@#"+"2013847764");
+								
+								
+								$('.countryInps02').focus(function(){
+									$(".specialInfoEn02").show();
+									var countryInfoVal02 = $(this).val();
+									if (countryInfoVal02 == '') {
+										var kkst02 = '';
+										for (var i=0;i<countryInfo02.length;i++){
+											kkst02 += "<div class='countryInp02' countryId='"+countryInfo02[i].split("!@#")[1]+"'>"+countryInfo02[i].split("!@#")[0]+"</div>";
+										}
+										$(".specialInfoEn02").html(kkst02);
+										// document.getElementById('info').innerHTML = kkst;
+									};
+									
+								});
+
+								$('#countryInps02').click(function (event) {    
+									event.stopPropagation();  //取消事件冒泡
+								});
+								// 点击空白处或者自身隐藏弹出层，下面分别为滑动和淡出效果。    
+								$(document).click(function (event) { $('.specialInfoEn02').hide()});
+								$(".menu1_show3").click(function (event) { $('.specialInfoEn02').hide()});
+								$('.specialInfoEn02').click(function (event) { $(this).hide() });
+
+								$(".specialInfoEn02").on('click', 'div.countryInp02', function(){
+									var textVal = $(this).text();
+									$("#countryInps02").val(textVal);
+									$("#countryId_I_Merchant").val($(this).attr("countryId"));
+									$("#countryInps02").attr("countryId",$(this).attr("countryId"));
+									// $(".specialInfo").empty();
+									$(".specialInfoEn02").hide();
+									RefreshChildrenCity_I($("#countryInps02"),document.getElementById('cityId_I_Merchant'),null)
+								})
+								
+								$('.countryInps02').keyup(function(){	
+									var countryArr02 = new Array();
+									var countryInfoVal02 = $(this).val();
+
+									var pattern02 = new RegExp('^'+countryInfoVal02, 'i');
+
+									for (var i = 0; i < countryInfo02.length; i++) {
+										if(pattern02.test(countryInfo02[i])){
+											countryArr02[i] = countryInfo02[i];
+										}
+									}
+									var kk02 = "";
+									for (var n = 0; n < countryArr02.length; n++) {
+										if(countryArr02[n]!=undefined){
+											kk02 += "<div class='countryInp02' countryId='"+countryArr02[n].split("!@#")[1]+"'>"+countryArr02[n].split("!@#")[0]+"</div>";
+										}
+									}
+									$('.specialInfoEn02').html('');
+									$('.specialInfoEn02').append(kk02);
+
+								})
+
+							})
+						</script>
+                        <dt>Merchant Type</dt>
+                        <dd>                       
+							<select name="merchantType_I_Merchant" id="merchantType_I_Merchant" >
+								<option value="" >Please Choose</option>
+								
+								<option value="0" >Shopping</option>
+								
+								<option value="1" >Restaurant</option>
+								
+								<option value="2" >Hotel</option>
+								
+								<option value="3" >Entertainment</option>
+								
+								<option value="4" >Travel</option>
+								
+								<option value="5" >Health</option>
+								
+								<option value="7" >Car Rental</option>
+								
+								<option value="8" >Tourist Attraction</option>
+								
+								<option value="6" >Other</option>
+								
+							</select>
+                        </dd>
+                        <dt>Offer Availability</dt>
+                        <dd>
+                            <label><input type="radio" name="offersFlag_I_Merchant" value="1" onclick="validateRadio_I()"/>Yes</label>
+                            <label><input type="radio" name="offersFlag_I_Merchant" value="0" onclick="validateRadio_I()"/>No</label>
+                        </dd>
+                  </dl>
+                  <dl class="dl2">
+                        <dt>City</dt>
+                        <dd> 
+                           <select name="cityId_I_Merchant" id="cityId_I_Merchant">
+							<option value="" >Please Choose</option>
+							</select>
+						</dd>
+                        <dt>Type of Offer</dt>
+                        <dd>                       
+							<select name="offersType_I_Merchant" id="offersType_I_Merchant" >
+								<option value="" >Please Choose</option>
+								
+								<option value="0" >Discount</option>
+								
+								<option value="1" >Gift</option>
+								
+								<option value="2" >Lucky Draw</option>
+								
+								<option value="3" >Credit</option>
+								
+								<option value="4" >Cashback</option>
+								
+								<option value="5" >Discount Coupon</option>
+								
+								<option value="6" >Special Privileges</option>
+								
+								<option value="7" >Other</option>
+								
+							</select>
+                        </dd>
+                    </dl>
+                  <dl>
+                        <dt style="width:115px;">Merchant Name</dt>
+                        <dd>
+                        <input style="width:175px;" name="merchantName_I_Merchant" id="merchantName_I_Merchant" class="txt-default" type="text" placeholder="Plese input merchant name"/>
+                        </dd>
+                   </dl>
+                
+                <dl class="dl4">
+                        <dt>Card Type</dt>
+                        <dd>                       
+							<select name="applicableCards_I_Merchant" id="applicableCards_I_Merchant" >
+								<option value="" >Please Choose</option>
+								
+								<option value="0" >All(card number starting with 62)</option>
+								
+								<option value="1" >Diamond Card</option>
+								
+								<option value="2" >Commercial Card</option>
+								
+								<option value="3" >Platinum Card</option>
+								
+								<option value="6" >Travel Mate. China</option>
+								
+								<option value="4" >Travel Mate. Aisa</option>
+								
+							</select>
+                        </dd>
+                        <dd class="text1">（Different card type corresponds to different offer）</dd>
+                  </dl>            
+                    
+                </div>
+                <div class="txt" >
+                   The information is only for reference purposes. Any benefits or discounts are subject to change at the merchant’s discretion.<br>
+                   The list of merchants presented is a non-exhaustive one. For further information on UnionPay merchants please look for the UnionPay logo<img src="/images/icon_4.gif" />,or show your UnionPay card <span style="color:#F00">(card number starting with 62)</span><img src="/images/icon_5.gif" /> to the cashier to see if it is accepted.
+                </div>			    
+                <div class="btn">
+	                <div style="display:none;text-align:right;position:absolute;left:170px;width:230px;top:6px;" id="load_animation_I_Merchant">
+							<img src="/image/animated_loading.gif" style="vertical-align:middle;"/>&nbsp;Searching now, Please wait...
+					</div> 
+                	<a href="javascript:submitDo_I_Merchant();"><img id="en_Merchant_search" src="/images/btn_3_en.gif" /></a>
+                </div>
+            </div>
+            
+            <div id="menu1_show4" class="menu1_show4">
+            	<div class="ewm_best">
+                	<div style="padding-top:30px;"><img src="/images/zcfw/mobile/en/ewm.jpg"></div>
+                    <div class="ewm1_best">
+                    	 <a href="/en/enserviceCenter/mobileServer/index.shtml#1" target="_blank">Mobile Website</a>
+                    </div>
+                     <div class="ewm2_best">
+                    	 <a href="/en/enserviceCenter/mobileServer/index.shtml#0" target="_blank">APP</a>
+                    </div>
+                     <div class="ewm3_best">
+                    	 <a href="/en/enserviceCenter/mobileServer/index.shtml#2" target="_blank" class="ewm_href">WeChat <br />Service Account</a>
+                    </div>
+                    <div class="ewm4_best">
+                    	 <a href="/en/enserviceCenter/mobileServer/index.shtml#3" target="_blank" class="ewm_href"> &nbsp;&nbsp;&nbsp;&nbsp;WeChat <br />Subscription Account</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="box" style="width:1189px">
+        <div class="left">
+            <a target="_blank"  href="/en/enaboutUpi/ennewsCenter/index.shtml">News Center</a> |
+            <a target="_blank" id="en_fwzx_jwyk_xz"  href="/en/enserviceCenter/enoverseas/encardInstructions/index.shtml">Instructions on Using Card Overseas</a> |
+            <a target="_blank"  href="/en/enaboutUpi/encompanyProfile/index.shtml?liClick=tab_a3">Contact Us</a> |
+            <a target="_blank" id="enrecruitment"  href="/en/enaboutUpi/enrecruitment">Recruitment</a> |
+            <a target="_blank"  href="/en/enusageTerms">Website Usage Terms</a> |
+            <a target="_blank"  href="/en/map/index.shtml">Sitemap</a>
+        </div>
+        <div class="right">
+            <span style="visibility:hidden;">
+			<script type="text/javascript">
+			var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+			document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Feb53aaeb7b15145456906ca63e5596f4' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+			</span>
+            2002-2016 Copyright UnionPay international
+            <a href="http://weibo.com/unionpayintl"  target="_blank"><img src="/images/weibo.png" /></a>
+            <a href="/en/enserviceCenter/mobileServer/index.shtml#2" target="_blank"><img src="/images/footer_icon2.gif" /></a>
+            <a href="https://www.facebook.com/unionpayintl?ref=hl" target="_blank"><img src="/images/footer_icon3.gif" alt="官方微信"/></a>
+            <a href="https://twitter.com/UnionPay_Intl" target="_blank"><img src="/images/footer_icon4.gif" alt="官方微信"/></a>           
+        </div>
+    </div>
+</div>
+<!--页尾-->
+</form>
+<script language=javascript>
+	function RefreshChildrenCity_I(p1,p2,p3){
+		if(oo(p1)==null || oo(p2)==null){
+			return;
+		}
+		
+		var p1Value = "";
+		if (p1.value != undefined) {
+			p1Value = p1.value;
+		} else {
+			p1Value = p1.attr("countryid");
+		}
+		
+		xmlHttp=GetXmlHttpObject()
+		var url="/ChildrenCityAjaxServlet?languageId=1&parentId="+p1Value;
+
+		xmlHttp.onreadystatechange=parentStateChanged;
+		xmlHttp.open("post",url,false);
+		xmlHttp.send(null);
+		
+		/* if(p1.value==""){ */
+		if(p1Value==""){
+			p2.options.length=0;
+			p2.options.add(new Option("Please Choose",""));
+			if(oo(p3)!=null) {
+				p3.options.length=0;
+				p3.options.add(new Option("Please Choose",""));
+			}
+		}
+		
+		function parentStateChanged(){
+			if (xmlHttp.readyState==4 && xmlHttp.status == 200){
+				var x = xmlHttp.responseText;
+				
+				eval("var y ="+x+";");
+				
+				p2.options.length=0;
+				p2.options.add(new Option("Please Choose",""));
+				if(oo(p3)!=null) {
+					p3.options.length=0;
+					p3.options.add(new Option("Please Choose",""));
+				}
+				for(var i=0;i<y.length;i++){
+					var text=y[i][2];
+					var value=y[i][0];
+					
+					p2.options.add(new Option(text,value));	
+				}
+				
+			}
+		}		
+	}	
+
+	function RefreshBank_I(cityId,p2){
+		if(oo(p2)==null){
+			return;
+		}
+		
+		xmlHttp=GetXmlHttpObject()
+		var url="/BankAjaxServlet?languageId=1&cityId="+cityId;
+
+		xmlHttp.onreadystatechange=parentStateChanged;
+		xmlHttp.open("post",url,false);
+		xmlHttp.send(null);
+		
+		function parentStateChanged(){
+			if (xmlHttp.readyState==4 && xmlHttp.status == 200){
+				var x = xmlHttp.responseText;
+				
+				eval("var y ="+x+";");
+				
+				p2.options.length=0;
+				p2.options.add(new Option("Please Choose",""));
+				for(var i=0;i<y.length;i++){
+					var text=y[i][1];
+					var value=y[i][0];
+					
+					p2.options.add(new Option(text,value));	
+				}
+				
+			}
+		}		
+	}	
+
+	function RefreshBank3_I() {
+		if(document.getElementById("cityId_I_ATM").value.length>0) {
+			RefreshBank_I(document.getElementById("cityId_I_ATM").value,document.getElementById("bank_I_ATM"));
+		}else if(document.getElementById("provinceId_I_ATM").value.length>0) {
+			RefreshBank_I(document.getElementById("provinceId_I_ATM").value,document.getElementById("bank_I_ATM"));
+		}else if(document.getElementById("countryId_I_ATM").value.length>0) {
+			RefreshBank_I(document.getElementById("countryId_I_ATM").value,document.getElementById("bank_I_ATM"));
+		}/* else if($("#countryInps").attr("countryId").length>0) {
+			RefreshBank_I($("#countryInps").attr("countryId"),document.getElementById("bank_I_ATM"));
+		} */
+	}
+
+	function submitDo_I_ATM() {
+		document.getElementById("load_animation_I_ATM").style.display="block";
+		// workForm_Bottom.action="/MainServlet?go=BIZTOOL_ATM_PG_AtmSearchWebEn_I";
+		workForm_Bottom.action="/en/enserviceCenter/enatmResult/";
+		workForm_Bottom.submit();
+	}
+	function submitDo_I_Merchant() {
+		document.getElementById("load_animation_I_Merchant").style.display="block";
+		// workForm_Bottom.action="/MainServlet?go=BIZTOOL_MERCHANT_PG_MerchantSearchWebEn_I";
+		workForm_Bottom.action="/en/enserviceCenter/enmerchantResult/";
+		workForm_Bottom.submit();
+	}
+	function submitDo_atmf() {	 
+		workForm_Bottom.action="/MainServlet?go=BIZTOOL_SERVICE_PG_FullTextQuery_News&index=1&languageId=1&searchField="+document.getElementById("searchField_atmf").value;
+		workForm_Bottom.submit();
+	}
+	function submitDo_mf() {
+	 	workForm_Bottom.action="/MainServlet?go=BIZTOOL_SERVICE_PG_FullTextQuery_News&index=2&languageId=1&searchField="+document.getElementById("searchField_mf").value;
+		workForm_Bottom.submit();
+	}
+
+	function submitDoShortcut_I(index) {
+		document.getElementById("load_animation_I_Merchant").style.display="block";
+		if(index==1) {
+			document.getElementById("merchantType_I_Merchant").value=0;
+			document.getElementById("merchantType_I_Merchant").focus();
+		}else if(index==2) {
+			document.getElementById("merchantType_I_Merchant").value=1;
+			document.getElementById("merchantType_I_Merchant").focus();
+		}else if(index==3) {
+			document.getElementById("offersType_I_Merchant").value=5;
+			document.getElementById("offersType_I_Merchant").focus();
+		}else if(index==4) {
+			document.getElementById("offersType_I_Merchant").value=0;
+			document.getElementById("offersType_I_Merchant").focus();
+		}else if(index==5) {
+			document.getElementById("offersType_I_Merchant").value=1;
+			document.getElementById("offersType_I_Merchant").focus();
+		}
+		submitDo_I_Merchant();
+	}
+
+	$(function(){
+		//底部回车键搜索
+	    var searchField_mf=document.getElementById("searchField_mf");
+		var searchField_atmf=document.getElementById("searchField_atmf");
+		
+		searchField_mf.onkeypress=function(ev){
+		  var event=ev||window.event;
+		  if(event.keyCode=='13')submitDo_mf();
+		}
+		searchField_atmf.onkeypress=function(ev){
+		  var event=ev||window.event;
+		  if(event.keyCode=='13')submitDo_atmf();
+		}
+		
+	});
+	
+	function validateRadio_I(){
+		var tmp=0;
+		var radios=document.getElementsByName("offersFlag_I_Merchant");
+		for(var i=0;i<radios.length;i++){
+			if(radios[1].checked==true){
+				tmp=1;
+			}
+		}
+		if(tmp==1) {
+			document.getElementById("offersType_I_Merchant").disabled=true;
+		}else {
+			document.getElementById("offersType_I_Merchant").disabled=false;
+		}
+	}
+
+</script> 
+		<!--页尾-->
+        <script type="text/javascript" src="/jsYlgj/site.all_en.js"></script>
+<script language=javascript>
+	function submitDo() {
+		//if(Validator.Validate(workForm,3)){
+			workForm.submit();
+		//}
+	}
+
+</script>
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_share_slide jiathis_share_24x24" id="jiathis_share_slide">
+<div class="jiathis_share_slide_top" id="jiathis_share_title"></div>
+<div class="jiathis_share_slide_inner">
+<div class="jiathis_style_24x24">
+<a class="jiathis_button_tsina"></a>
+<a class="jiathis_button_weixin"></a>
+<a class="jiathis_button_tqq"></a>
+<a class="jiathis_button_qzone"></a>
+<a class="jiathis_button_renren"></a>
+<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+<script type="text/javascript">
+var local=window.location;
+var jiathis_config = {
+	data_track_clickback:'true',
+	url:local,
+	title:document.title ,
+	slide:{
+		divid:'jiathismain',
+		pos:'left'
+	}
+};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1547947" charset="utf-8"></script>	
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_slide.js" charset="utf-8"></script>
+</div></div></div>
+<!-- JiaThis Button END -->
+<script>
+function adjust(){
+    var k_num = ($(window).width() - 1000)/2 -45;
+    $(".jiathis_share_slide").css({top:163,left:k_num});
+}
+adjust();
+$(window).resize(function(){
+    adjust();
+});
+</script> 
+</body>
+</html>
