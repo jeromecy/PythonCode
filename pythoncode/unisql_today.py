@@ -3,8 +3,8 @@ import os, sys, string
 import MySQLdb
 import socket
 import urllib2
-from httplib import IncompleteRead
-
+#from httplib import IncompleteRead
+import httplib
 
 
 class DB:
