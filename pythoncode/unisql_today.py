@@ -1,7 +1,10 @@
-import urllib, urllib2,re,datetime,csv
+import urllib, re,datetime,csv
 import os, sys, string  
 import MySQLdb
 import socket
+import urllib2
+from httplib import IncompleteRead
+
 
 
 class DB:
@@ -70,6 +73,9 @@ while k<len(baseCurrency):
                 price=0.000
                 print type(e)
             except socket.timeout as e:
+                price=0.000
+                print type(e)
+            except httplib.IncompleteRead as e:
                 price=0.000
                 print type(e)
 
