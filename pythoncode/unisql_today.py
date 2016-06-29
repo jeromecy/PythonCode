@@ -48,7 +48,7 @@ headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.11 (KHTML,
 db=DB()
 
 
-deltadays=datetime.timedelta(days=j)
+deltadays=datetime.timedelta(days=0)
 date=today-deltadays
 k=0
 while k<len(baseCurrency):
