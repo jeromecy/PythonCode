@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8CB2CEF11D25077800FAA8CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2CEF01D25077800FAA8CE /* AppDelegate.swift */; };
+		8CB2CEF31D25077800FAA8CE /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2CEF21D25077800FAA8CE /* MasterViewController.swift */; };
+		8CB2CEF51D25077800FAA8CE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2CEF41D25077800FAA8CE /* DetailViewController.swift */; };
+		8CB2CEF81D25077800FAA8CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB2CEF61D25077800FAA8CE /* Main.storyboard */; };
+		8CB2CEFA1D25077800FAA8CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CB2CEF91D25077800FAA8CE /* Assets.xcassets */; };
+		8CB2CEFD1D25077800FAA8CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB2CEFB1D25077800FAA8CE /* LaunchScreen.storyboard */; };
+		8CB2CF081D25077800FAA8CE /* unionpayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2CF071D25077800FAA8CE /* unionpayTests.swift */; };
+		8CB2CF131D25077800FAA8CE /* unionpayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2CF121D25077800FAA8CE /* unionpayUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CB2CF041D25077800FAA8CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CB2CEE51D25077800FAA8CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CB2CEEC1D25077800FAA8CE;
+			remoteInfo = unionpay;
+		};
+		8CB2CF0F1D25077800FAA8CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CB2CEE51D25077800FAA8CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CB2CEEC1D25077800FAA8CE;
+			remoteInfo = unionpay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8CB2CEED1D25077800FAA8CE /* unionpay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unionpay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CB2CEF01D25077800FAA8CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8CB2CEF21D25077800FAA8CE /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		8CB2CEF41D25077800FAA8CE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8CB2CEF71D25077800FAA8CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CB2CEF91D25077800FAA8CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CB2CEFC1D25077800FAA8CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CB2CEFE1D25077800FAA8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CB2CF031D25077800FAA8CE /* unionpayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = unionpayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CB2CF071D25077800FAA8CE /* unionpayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unionpayTests.swift; sourceTree = "<group>"; };
+		8CB2CF091D25077800FAA8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CB2CF0E1D25077800FAA8CE /* unionpayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = unionpayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CB2CF121D25077800FAA8CE /* unionpayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unionpayUITests.swift; sourceTree = "<group>"; };
+		8CB2CF141D25077800FAA8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CB2CEEA1D25077800FAA8CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CB2CF001D25077800FAA8CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CB2CF0B1D25077800FAA8CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CB2CEE41D25077800FAA8CE = {
+			isa = PBXGroup;
+			children = (
+				8CB2CEEF1D25077800FAA8CE /* unionpay */,
+				8CB2CF061D25077800FAA8CE /* unionpayTests */,
+				8CB2CF111D25077800FAA8CE /* unionpayUITests */,
+				8CB2CEEE1D25077800FAA8CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CB2CEEE1D25077800FAA8CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CB2CEED1D25077800FAA8CE /* unionpay.app */,
+				8CB2CF031D25077800FAA8CE /* unionpayTests.xctest */,
+				8CB2CF0E1D25077800FAA8CE /* unionpayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CB2CEEF1D25077800FAA8CE /* unionpay */ = {
+			isa = PBXGroup;
+			children = (
+				8CB2CEF01D25077800FAA8CE /* AppDelegate.swift */,
+				8CB2CEF21D25077800FAA8CE /* MasterViewController.swift */,
+				8CB2CEF41D25077800FAA8CE /* DetailViewController.swift */,
+				8CB2CEF61D25077800FAA8CE /* Main.storyboard */,
+				8CB2CEF91D25077800FAA8CE /* Assets.xcassets */,
+				8CB2CEFB1D25077800FAA8CE /* LaunchScreen.storyboard */,
+				8CB2CEFE1D25077800FAA8CE /* Info.plist */,
+			);
+			path = unionpay;
+			sourceTree = "<group>";
+		};
+		8CB2CF061D25077800FAA8CE /* unionpayTests */ = {
+			isa = PBXGroup;
+			children = (
+				8CB2CF071D25077800FAA8CE /* unionpayTests.swift */,
+				8CB2CF091D25077800FAA8CE /* Info.plist */,
+			);
+			path = unionpayTests;
+			sourceTree = "<group>";
+		};
+		8CB2CF111D25077800FAA8CE /* unionpayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8CB2CF121D25077800FAA8CE /* unionpayUITests.swift */,
+				8CB2CF141D25077800FAA8CE /* Info.plist */,
+			);
+			path = unionpayUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CB2CEEC1D25077800FAA8CE /* unionpay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CB2CF171D25077800FAA8CE /* Build configuration list for PBXNativeTarget "unionpay" */;
+			buildPhases = (
+				8CB2CEE91D25077800FAA8CE /* Sources */,
+				8CB2CEEA1D25077800FAA8CE /* Frameworks */,
+				8CB2CEEB1D25077800FAA8CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = unionpay;
+			productName = unionpay;
+			productReference = 8CB2CEED1D25077800FAA8CE /* unionpay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8CB2CF021D25077800FAA8CE /* unionpayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CB2CF1A1D25077800FAA8CE /* Build configuration list for PBXNativeTarget "unionpayTests" */;
+			buildPhases = (
+				8CB2CEFF1D25077800FAA8CE /* Sources */,
+				8CB2CF001D25077800FAA8CE /* Frameworks */,
+				8CB2CF011D25077800FAA8CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CB2CF051D25077800FAA8CE /* PBXTargetDependency */,
+			);
+			name = unionpayTests;
+			productName = unionpayTests;
+			productReference = 8CB2CF031D25077800FAA8CE /* unionpayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8CB2CF0D1D25077800FAA8CE /* unionpayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CB2CF1D1D25077800FAA8CE /* Build configuration list for PBXNativeTarget "unionpayUITests" */;
+			buildPhases = (
+				8CB2CF0A1D25077800FAA8CE /* Sources */,
+				8CB2CF0B1D25077800FAA8CE /* Frameworks */,
+				8CB2CF0C1D25077800FAA8CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CB2CF101D25077800FAA8CE /* PBXTargetDependency */,
+			);
+			name = unionpayUITests;
+			productName = unionpayUITests;
+			productReference = 8CB2CF0E1D25077800FAA8CE /* unionpayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CB2CEE51D25077800FAA8CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Jerome Cao";
+				TargetAttributes = {
+					8CB2CEEC1D25077800FAA8CE = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = HJ45PY85YY;
+					};
+					8CB2CF021D25077800FAA8CE = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 8CB2CEEC1D25077800FAA8CE;
+					};
+					8CB2CF0D1D25077800FAA8CE = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 8CB2CEEC1D25077800FAA8CE;
+					};
+				};
+			};
+			buildConfigurationList = 8CB2CEE81D25077800FAA8CE /* Build configuration list for PBXProject "unionpay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CB2CEE41D25077800FAA8CE;
+			productRefGroup = 8CB2CEEE1D25077800FAA8CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CB2CEEC1D25077800FAA8CE /* unionpay */,
+				8CB2CF021D25077800FAA8CE /* unionpayTests */,
+				8CB2CF0D1D25077800FAA8CE /* unionpayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CB2CEEB1D25077800FAA8CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CB2CEFD1D25077800FAA8CE /* LaunchScreen.storyboard in Resources */,
+				8CB2CEFA1D25077800FAA8CE /* Assets.xcassets in Resources */,
+				8CB2CEF81D25077800FAA8CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CB2CF011D25077800FAA8CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CB2CF0C1D25077800FAA8CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CB2CEE91D25077800FAA8CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CB2CEF51D25077800FAA8CE /* DetailViewController.swift in Sources */,
+				8CB2CEF31D25077800FAA8CE /* MasterViewController.swift in Sources */,
+				8CB2CEF11D25077800FAA8CE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CB2CEFF1D25077800FAA8CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CB2CF081D25077800FAA8CE /* unionpayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CB2CF0A1D25077800FAA8CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CB2CF131D25077800FAA8CE /* unionpayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CB2CF051D25077800FAA8CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CB2CEEC1D25077800FAA8CE /* unionpay */;
+			targetProxy = 8CB2CF041D25077800FAA8CE /* PBXContainerItemProxy */;
+		};
+		8CB2CF101D25077800FAA8CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CB2CEEC1D25077800FAA8CE /* unionpay */;
+			targetProxy = 8CB2CF0F1D25077800FAA8CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8CB2CEF61D25077800FAA8CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CB2CEF71D25077800FAA8CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8CB2CEFB1D25077800FAA8CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CB2CEFC1D25077800FAA8CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CB2CF151D25077800FAA8CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8CB2CF161D25077800FAA8CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CB2CF181D25077800FAA8CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = unionpay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = union.unionpay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8CB2CF191D25077800FAA8CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = unionpay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = union.unionpay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8CB2CF1B1D25077800FAA8CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = unionpayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = union.unionpayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/unionpay.app/unionpay";
+			};
+			name = Debug;
+		};
+		8CB2CF1C1D25077800FAA8CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = unionpayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = union.unionpayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/unionpay.app/unionpay";
+			};
+			name = Release;
+		};
+		8CB2CF1E1D25077800FAA8CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = unionpayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = union.unionpayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = unionpay;
+			};
+			name = Debug;
+		};
+		8CB2CF1F1D25077800FAA8CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = unionpayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = union.unionpayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = unionpay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CB2CEE81D25077800FAA8CE /* Build configuration list for PBXProject "unionpay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CB2CF151D25077800FAA8CE /* Debug */,
+				8CB2CF161D25077800FAA8CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CB2CF171D25077800FAA8CE /* Build configuration list for PBXNativeTarget "unionpay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CB2CF181D25077800FAA8CE /* Debug */,
+				8CB2CF191D25077800FAA8CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8CB2CF1A1D25077800FAA8CE /* Build configuration list for PBXNativeTarget "unionpayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CB2CF1B1D25077800FAA8CE /* Debug */,
+				8CB2CF1C1D25077800FAA8CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8CB2CF1D1D25077800FAA8CE /* Build configuration list for PBXNativeTarget "unionpayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CB2CF1E1D25077800FAA8CE /* Debug */,
+				8CB2CF1F1D25077800FAA8CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CB2CEE51D25077800FAA8CE /* Project object */;
+}
