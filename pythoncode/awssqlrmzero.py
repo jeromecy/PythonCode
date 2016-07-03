@@ -5,7 +5,7 @@ import socket
 import urllib2
 import httplib
 #import MySQLdb.cursors
-
+import country
 
 class DB:
     conn = None
@@ -31,11 +31,13 @@ today =datetime.date.today()
 ISOFORMAT='%Y-%m-%d'
 #date= today -deltadays
 
-baseCurrency=['CNY','EUR']
+#baseCurrency=['CNY','EUR']
 #baseCurrency=['CNY','EUR','GBP','HKD','JPY','MOP','NZD','SGD','THB','USD']
 #transactionCurrency=['CAD','CNY','HKD','EUR','JPY','NZD','USD']
-transactionCurrency=['HKD','EUR','CNY']
+#transactionCurrency=['HKD','EUR','CNY']
 
+baseCurrency=country.base
+transactionCurrency=country.trans
 
 url='http://www.unionpayintl.com/MainServlet'
 

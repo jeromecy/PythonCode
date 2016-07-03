@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C43A9911D28DCDB00853B2B /* jasontest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C43A9901D28DCDB00853B2B /* jasontest.m */; };
 		8CB2CEF11D25077800FAA8CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2CEF01D25077800FAA8CE /* AppDelegate.swift */; };
 		8CB2CEF31D25077800FAA8CE /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2CEF21D25077800FAA8CE /* MasterViewController.swift */; };
 		8CB2CEF51D25077800FAA8CE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2CEF41D25077800FAA8CE /* DetailViewController.swift */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C43A98F1D28DCDA00853B2B /* unionpay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "unionpay-Bridging-Header.h"; sourceTree = "<group>"; };
+		8C43A9901D28DCDB00853B2B /* jasontest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jasontest.m; sourceTree = "<group>"; };
 		8CB2CEED1D25077800FAA8CE /* unionpay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unionpay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB2CEF01D25077800FAA8CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CB2CEF21D25077800FAA8CE /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -100,12 +103,14 @@
 			isa = PBXGroup;
 			children = (
 				8CB2CEF01D25077800FAA8CE /* AppDelegate.swift */,
+				8C43A9901D28DCDB00853B2B /* jasontest.m */,
 				8CB2CEF21D25077800FAA8CE /* MasterViewController.swift */,
 				8CB2CEF41D25077800FAA8CE /* DetailViewController.swift */,
 				8CB2CEF61D25077800FAA8CE /* Main.storyboard */,
 				8CB2CEF91D25077800FAA8CE /* Assets.xcassets */,
 				8CB2CEFB1D25077800FAA8CE /* LaunchScreen.storyboard */,
 				8CB2CEFE1D25077800FAA8CE /* Info.plist */,
+				8C43A98F1D28DCDA00853B2B /* unionpay-Bridging-Header.h */,
 			);
 			path = unionpay;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 			files = (
 				8CB2CEF51D25077800FAA8CE /* DetailViewController.swift in Sources */,
 				8CB2CEF31D25077800FAA8CE /* MasterViewController.swift in Sources */,
+				8C43A9911D28DCDB00853B2B /* jasontest.m in Sources */,
 				8CB2CEF11D25077800FAA8CE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,11 +410,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = unionpay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = union.unionpay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "unionpay/unionpay-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -416,11 +425,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = unionpay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = union.unionpay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "unionpay/unionpay-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -489,6 +500,7 @@
 				8CB2CF191D25077800FAA8CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CB2CF1A1D25077800FAA8CE /* Build configuration list for PBXNativeTarget "unionpayTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +509,7 @@
 				8CB2CF1C1D25077800FAA8CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CB2CF1D1D25077800FAA8CE /* Build configuration list for PBXNativeTarget "unionpayUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +518,7 @@
 				8CB2CF1F1D25077800FAA8CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

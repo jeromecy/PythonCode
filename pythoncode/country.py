@@ -1,0 +1,3 @@
+base=['CNY','EUR','GBP','HKD','JPY','MOP','NZD','SGD','THB','USD'] #10
+    
+trans=['CNY','EUR','GBP','HKD','JPY','MOP','NZD','SGD','THB','USD','AED','AFN','AOA','ARS','AUD','AZN','BDT','BGN','BHD','BND','BRL','BSD','BWP','BYR','CDF','CHF','CLP','COP','CRC','CUC','CZK','DKK','DZD','EGP','ETB','FJD','GEL','GHS','GMD','GNF','HUF','IDR','ILS','INR','ISK','JOD','KES','KGS','KMF','KRW','KWD','KZT','LAK','LBP','LKR','MAD','MGA','MMK','MNT','MRO','MUR','MVR','MWK','MXN','MYR','NGN','NOK','NPR','OMR','PEN','PGK','PHP','PKR','PLN','QAR','RON','RUB','RWF','SAR','SCR','SDG','SEK','SLL','SRD','SSP','SYP','TJS','TOP','TRY','TWD','TZS','UAH','UGX','UYU','UZS','VEF','VND','VUV','XAF','XOF','XPF','YER','ZAR','ZMK','ZMW'] #105 all

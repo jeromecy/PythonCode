@@ -5,8 +5,6 @@ import urllib2
 #from httplib import IncompleteRead
 import httplib
 from DB import DB
-import country
-
 
 # timeout in seconds
 socket.setdefaulttimeout(30)
@@ -14,10 +12,8 @@ socket.setdefaulttimeout(30)
 today =datetime.date.today()
 ISOFORMAT='%Y-%m-%d'
 
-
-baseCurrency=country.base
-transactionCurrency=country.trans
-
+baseCurrency=['CNY','EUR','GBP','HKD','JPY','MOP','NZD','SGD','THB','USD']
+transactionCurrency=['CNY','EUR','HKD','JPY','NZD','SGD','USD']  # complement
 
 url = 'http://www.unionpayintl.com/MainServlet'
 

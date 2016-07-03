@@ -5,6 +5,7 @@ import urllib2
 #from httplib import IncompleteRead
 import httplib
 from DB import DB
+import country
 
 # timeout in seconds
 socket.setdefaulttimeout(30)
@@ -12,12 +13,8 @@ socket.setdefaulttimeout(30)
 today =datetime.date.today()
 ISOFORMAT='%Y-%m-%d'
 
-
-#baseCurrency=['CNY','EUR']
-baseCurrency=['CNY','EUR','GBP','HKD','JPY','MOP','NZD','SGD','THB','USD']
-#transactionCurrency=['CAD','CNY','HKD','EUR','JPY','NZD','USD']
-#transactionCurrency=['HKD','EUR','CNY']
-transactionCurrency=['AED','AFN','AOA','ARS','AUD','AZN','BDT','BGN','BHD','BND','BRL','BSD','BWP','BYR','CDF','CHF','CLP','COP','CRC','CUC','CZK','DKK','DZD','EGP','ETB','FJD','GBP','GEL','GHS','GMD','GNF','HUF','IDR','ILS','INR','ISK','JOD','KES','KGS','KMF','KRW','KWD','KZT','LAK','LBP','LKR','MAD','MGA','MMK','MNT','MOP','MRO','MUR','MVR','MWK','MXN','MYR','NGN','NOK','NPR','OMR','PEN','PGK','PHP','PKR','PLN','QAR','RON','RUB','RWF','SAR','SCR','SDG','SEK','SLL','SRD','SSP','SYP','THB','TJS','TOP','TRY','TWD','TZS','UAH','UGX','UYU','UZS','VEF','VND','VUV','XAF','XOF','XPF','YER','ZAR','ZMK','ZMW']
+baseCurrency=country.base
+transactionCurrency=country.trans
 
 url = 'http://www.unionpayintl.com/MainServlet'
 
