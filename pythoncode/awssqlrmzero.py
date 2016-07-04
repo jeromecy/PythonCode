@@ -1,4 +1,4 @@
-import urllib, re,datetime,csv
+import urllib, re,datetime
 import os, sys, string
 import MySQLdb
 import socket
@@ -6,22 +6,6 @@ import urllib2
 import httplib
 #import MySQLdb.cursors
 import country
-
-class DB:
-    conn = None
-    
-    def connect(self):
-        self.conn = MySQLdb.connect(host='qdm166846301.my3w.com',user='qdm166846301',passwd='01240304',db='qdm166846301_db')
-    
-    def query(self, sql):
-        try:
-            cursor = self.conn.cursor()
-            cursor.execute(sql)
-        except (AttributeError, MySQLdb.OperationalError):
-            self.connect()
-            cursor = self.conn.cursor()
-            cursor.execute(sql)
-        return cursor
 
 
 # timeout in seconds
@@ -55,7 +39,7 @@ headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.11 (KHTML,
 
 
 #db=DB()
-conn = MySQLdb.connect(host='ec2union-cluster.cluster-c8tmmdxu2zy8.us-east-1.rds.amazonaws.com',user='victorcraft',passwd='ilove86415175',db='iosunion')
+conn = MySQLdb.connect(host='unionintokyo-cluster.cluster-cg6x01smgrfp.ap-northeast-1.rds.amazonaws.com',user='victorcraft',passwd='ilove86415175',db='unionpayTokyo')
 cursor = conn.cursor()
 
 sql="SELECT * FROM `unionpay` WHERE `currency`=0"

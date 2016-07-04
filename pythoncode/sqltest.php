@@ -7,13 +7,15 @@
 <?php
 // by MoreWindows( http://blog.csdn.net/MoreWindows )  
 //定义常量  
-define(DB_HOST, 'ec2union-cluster.cluster-c8tmmdxu2zy8.us-east-1.rds.amazonaws.com');
+define(DB_HOST, 'unionintokyo-cluster.cluster-cg6x01smgrfp.ap-northeast-1.rds.amazonaws.com');
 define(DB_USER, 'victorcraft');
 define(DB_PASS, 'ilove86415175');
-define(DB_DATABASENAME, 'iosunion');
-define(DB_TABLENAME, 'unionpay');  
-//数据库表的列名  
-$dbcolarray = array('ID', 'date', 'base', 'transact','currency');  
+define(DB_DATABASENAME, 'unionpayTokyo');
+define(DB_TABLENAME, 'unionpay');
+    
+    
+//数据库表的列名
+$dbcolarray = array('ID', 'date', 'base', 'transact','currency');
   
 //mysql_connect  
 $conn = mysql_connect(DB_HOST, DB_USER, DB_PASS) or die("connect failed" . mysql_error());  

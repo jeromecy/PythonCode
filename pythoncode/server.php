@@ -1,8 +1,9 @@
 <?php
 
 // Create connection
-$con=mysqli_connect("ec2union-cluster.cluster-c8tmmdxu2zy8.us-east-1.rds.amazonaws.com","victorcraft","ilove86415175","iosunion");
+$con=mysqli_connect("unionintokyo-cluster.cluster-cg6x01smgrfp.ap-northeast-1.rds.amazonaws.com","victorcraft","ilove86415175","unionpayTokyo");
 
+    
 // Check connection
 if (mysqli_connect_errno())
 {
