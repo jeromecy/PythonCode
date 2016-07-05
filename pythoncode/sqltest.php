@@ -7,10 +7,10 @@
 <?php
 // by MoreWindows( http://blog.csdn.net/MoreWindows )  
 //定义常量  
-define(DB_HOST, 'unionintokyo-cluster.cluster-cg6x01smgrfp.ap-northeast-1.rds.amazonaws.com');
+define(DB_HOST, 'unionintokyo.cg6x01smgrfp.ap-northeast-1.rds.amazonaws.com');
 define(DB_USER, 'victorcraft');
 define(DB_PASS, 'ilove86415175');
-define(DB_DATABASENAME, 'unionpayTokyo');
+define(DB_DATABASENAME, 'unionmysql');
 define(DB_TABLENAME, 'unionpay');
     
     

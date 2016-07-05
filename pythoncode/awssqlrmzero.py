@@ -39,7 +39,7 @@ headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.11 (KHTML,
 
 
 #db=DB()
-conn = MySQLdb.connect(host='unionintokyo-cluster.cluster-cg6x01smgrfp.ap-northeast-1.rds.amazonaws.com',user='victorcraft',passwd='ilove86415175',db='unionpayTokyo')
+conn = MySQLdb.connect(host='unionintokyo.cg6x01smgrfp.ap-northeast-1.rds.amazonaws.com',user='victorcraft',passwd='ilove86415175',db='unionmysql')
 cursor = conn.cursor()
 
 sql="SELECT * FROM `unionpay` WHERE `currency`=0"

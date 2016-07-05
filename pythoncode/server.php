@@ -1,7 +1,7 @@
 <?php
 
 // Create connection
-$con=mysqli_connect("unionintokyo-cluster.cluster-cg6x01smgrfp.ap-northeast-1.rds.amazonaws.com","victorcraft","ilove86415175","unionpayTokyo");
+$con=mysqli_connect("unionintokyo.cg6x01smgrfp.ap-northeast-1.rds.amazonaws.com","victorcraft","ilove86415175","unionmysql");
 
     
 // Check connection

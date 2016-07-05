@@ -4,7 +4,7 @@ class DB:
   conn = None
 
   def connect(self):
-    self.conn = MySQLdb.connect(host='unionintokyo-cluster.cluster-cg6x01smgrfp.ap-northeast-1.rds.amazonaws.com',user='victorcraft',passwd='ilove86415175',db='unionpayTokyo')
+    self.conn = MySQLdb.connect(host='unionintokyo.cg6x01smgrfp.ap-northeast-1.rds.amazonaws.com',user='victorcraft',passwd='ilove86415175',db='unionmysql')
 
   def query(self, sql):
     try:
