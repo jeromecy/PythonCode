@@ -17,9 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="basiccell" translatesAutoresizingMaskIntoConstraints="NO" id="0O4-kR-kdq" userLabel="Listtableview">
-                                <rect key="frame" x="140" y="180" width="320" height="44"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0O4-kR-kdq" id="zaY-lM-Dt4">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="basiccell" translatesAutoresizingMaskIntoConstraints="NO" id="8GY-mG-Jbq" userLabel="Listtableview">
+                                <rect key="frame" x="101" y="55" width="320" height="44"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8GY-mG-Jbq" id="LoN-w3-sPl">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
@@ -28,9 +28,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="Listtableview" destination="0O4-kR-kdq" id="R5w-Ld-U6M"/>
-                        <outlet property="list" destination="0O4-kR-kdq" id="bxT-by-zn2"/>
-                        <outlet property="listtableview" destination="0O4-kR-kdq" id="Ghh-di-Rey"/>
+                        <outlet property="Listtable" destination="8GY-mG-Jbq" id="LmW-Mj-PRR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

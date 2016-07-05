@@ -21,7 +21,7 @@ class homemodel: NSObject, NSURLSessionDataDelegate {
     
     var data : NSMutableData = NSMutableData()
     
-    let urlPath: String = "http://www.xaomng.com/server.php" //this will be changed to the path where service.php lives
+    let urlPath: String = "http://52.192.140.108/union/server.php" //this will be changed to the path where service.php lives
     
     
     func downloadItems() {
@@ -91,6 +91,7 @@ class homemodel: NSObject, NSURLSessionDataDelegate {
             }
             
             currencylist.addObject(local)
+            
             
         }
         

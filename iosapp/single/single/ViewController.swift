@@ -11,8 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, HomeModelProtocal  {
     
     //Properties
-    
-    @IBOutlet weak var Listtableview: UITableView!
+    @IBOutlet weak var Listtableview: UITableView!    
     
     var feedItems: NSArray = NSArray()
     var selectedLocation : localmodel = localmodel()
