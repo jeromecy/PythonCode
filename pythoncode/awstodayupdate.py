@@ -68,14 +68,17 @@ try:
         except httplib.IncompleteRead as e:
             price=0.000
             print type(e)
-        
-        sql2="UPDATE `unionpay`  SET `currency` =%f WHERE ID=%d" %(price,ID)
-        try:
-            cursor.execute(sql2)
-            conn.commit()
-            print sql2
-        except Exception, e:
-            print e
+
+        if price!=currency & price!=0:
+            sql2="UPDATE `unionpay`  SET `currency` =%f WHERE ID=%d" %(price,ID)
+            try:
+                cursor.execute(sql2)
+                conn.commit()
+                print sql2
+            except Exception, e:
+                print e
+        else:
+            print "Not update"
 
 except:
     print "Error: unable to fecth data"

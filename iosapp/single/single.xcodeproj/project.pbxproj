@@ -14,8 +14,8 @@
 		8C43A9A91D28FBF100853B2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C43A9A71D28FBF100853B2B /* LaunchScreen.storyboard */; };
 		8C43A9B41D28FBF100853B2B /* singleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C43A9B31D28FBF100853B2B /* singleTests.swift */; };
 		8C43A9BF1D28FBF100853B2B /* singleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C43A9BE1D28FBF100853B2B /* singleUITests.swift */; };
-		8C43A9CD1D2903B200853B2B /* homemodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C43A9CC1D2903B200853B2B /* homemodel.swift */; };
-		8C43A9CF1D2903C800853B2B /* localmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C43A9CE1D2903C800853B2B /* localmodel.swift */; };
+		8C43A9CD1D2903B200853B2B /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C43A9CC1D2903B200853B2B /* HomeModel.swift */; };
+		8C43A9CF1D2903C800853B2B /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C43A9CE1D2903C800853B2B /* LocationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +49,8 @@
 		8C43A9BA1D28FBF100853B2B /* singleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = singleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C43A9BE1D28FBF100853B2B /* singleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singleUITests.swift; sourceTree = "<group>"; };
 		8C43A9C01D28FBF100853B2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C43A9CC1D2903B200853B2B /* homemodel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homemodel.swift; sourceTree = "<group>"; };
-		8C43A9CE1D2903C800853B2B /* localmodel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = localmodel.swift; sourceTree = "<group>"; };
+		8C43A9CC1D2903B200853B2B /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		8C43A9CE1D2903C800853B2B /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +107,8 @@
 				8C43A9A51D28FBF100853B2B /* Assets.xcassets */,
 				8C43A9A71D28FBF100853B2B /* LaunchScreen.storyboard */,
 				8C43A9AA1D28FBF100853B2B /* Info.plist */,
-				8C43A9CC1D2903B200853B2B /* homemodel.swift */,
-				8C43A9CE1D2903C800853B2B /* localmodel.swift */,
+				8C43A9CC1D2903B200853B2B /* HomeModel.swift */,
+				8C43A9CE1D2903C800853B2B /* LocationModel.swift */,
 			);
 			path = single;
 			sourceTree = "<group>";
@@ -263,9 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C43A9A11D28FBF100853B2B /* ViewController.swift in Sources */,
-				8C43A9CD1D2903B200853B2B /* homemodel.swift in Sources */,
+				8C43A9CD1D2903B200853B2B /* HomeModel.swift in Sources */,
 				8C43A99F1D28FBF100853B2B /* AppDelegate.swift in Sources */,
-				8C43A9CF1D2903C800853B2B /* localmodel.swift in Sources */,
+				8C43A9CF1D2903C800853B2B /* LocationModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +492,7 @@
 				8C43A9C51D28FBF100853B2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C43A9C61D28FBF100853B2B /* Build configuration list for PBXNativeTarget "singleTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +501,7 @@
 				8C43A9C81D28FBF100853B2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C43A9C91D28FBF100853B2B /* Build configuration list for PBXNativeTarget "singleUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +510,7 @@
 				8C43A9CB1D28FBF100853B2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

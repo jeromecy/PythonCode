@@ -1,31 +1,24 @@
-//
-//  ViewController.swift
-//  single
-//
-//  Created by Jerome Cao on 3/07/16.
-//  Copyright © 2016 Jerome Cao. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, HomeModelProtocal  {
     
     //Properties
-    @IBOutlet weak var Listtableview: UITableView!    
     
     var feedItems: NSArray = NSArray()
-    var selectedLocation : localmodel = localmodel()
-    //@IBOutlet weak var Listtableview: UITableView!
+    var selectedLocation : LocationModel = LocationModel()
+    //@IBOutlet weak var listTableView: UITableView!
+    
+    @IBOutlet weak var listTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //set delegates and initialize homeModel
         
-        self.Listtableview.delegate = self
-        self.Listtableview.dataSource = self
+        self.listTableView.delegate = self
+        self.listTableView.dataSource = self
         
-        let homeModel = homemodel()
+        let homeModel = HomeModel()
         homeModel.delegate = self
         homeModel.downloadItems()
         
@@ -34,7 +27,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func itemsDownloaded(items: NSArray) {
         
         feedItems = items
-        self.Listtableview.reloadData()
+        self.listTableView.reloadData()
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -48,32 +41,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cellIdentifier: String = "basiccell"
         let myCell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier)!
         // Get the location to be shown
-        let item: localmodel = feedItems[indexPath.row] as! localmodel
+        let item: LocationModel = feedItems[indexPath.row] as! LocationModel
         // Get references to labels of cell
-        myCell.textLabel!.text = item.date
+        myCell.textLabel!.text = item.address
         
         return myCell
     }
     
 }
-
-
-//class ViewController: UIViewController {
-
-//    @IBOutlet weak var listtableview: UITableViewCell!
-    
-    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-//    }
-
-
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-//    }
-
-
-//}
-

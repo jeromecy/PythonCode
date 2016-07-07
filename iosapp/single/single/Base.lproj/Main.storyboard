@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="basiccell" translatesAutoresizingMaskIntoConstraints="NO" id="8GY-mG-Jbq" userLabel="Listtableview">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="basiccell" translatesAutoresizingMaskIntoConstraints="NO" id="8GY-mG-Jbq" userLabel="LlistTableView">
                                 <rect key="frame" x="101" y="55" width="320" height="44"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8GY-mG-Jbq" id="LoN-w3-sPl">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -29,6 +29,7 @@
                     </view>
                     <connections>
                         <outlet property="Listtable" destination="8GY-mG-Jbq" id="LmW-Mj-PRR"/>
+                        <outlet property="listTableView" destination="8GY-mG-Jbq" id="OkJ-pF-HBQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

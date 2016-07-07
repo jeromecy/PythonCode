@@ -6,7 +6,6 @@ let url = NSBundle.mainBundle().URLForResource("data", withExtension: "json")
 let data = NSData(contentsOfURL: url!)
 
 
-
 func readJSONObject(object: [String: AnyObject]) {
     guard let title = object["dataTitle"] as? String,
         let version = object["swiftVersion"] as? Float,

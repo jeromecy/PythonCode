@@ -1,11 +1,3 @@
-//
-//  homemodel.swift
-//  single
-//
-//  Created by Jerome Cao on 3/07/16.
-//  Copyright © 2016 Jerome Cao. All rights reserved.
-//
-
 import Foundation
 
 protocol HomeModelProtocal: class {
@@ -13,7 +5,7 @@ protocol HomeModelProtocal: class {
 }
 
 
-class homemodel: NSObject, NSURLSessionDataDelegate {
+class HomeModel: NSObject, NSURLSessionDataDelegate {
     
     //properties
     
@@ -21,7 +13,7 @@ class homemodel: NSObject, NSURLSessionDataDelegate {
     
     var data : NSMutableData = NSMutableData()
     
-    let urlPath: String = "http://52.192.140.108/union/server.php" //this will be changed to the path where service.php lives
+    let urlPath: String = "52.192.140.108/union/server.php" //this will be changed to the path where service.php lives
     
     
     func downloadItems() {
@@ -54,6 +46,7 @@ class homemodel: NSObject, NSURLSessionDataDelegate {
         
     }
     
+    
     func parseJSON() {
         
         var jsonResult: NSMutableArray = NSMutableArray()
@@ -67,41 +60,37 @@ class homemodel: NSObject, NSURLSessionDataDelegate {
         }
         
         var jsonElement: NSDictionary = NSDictionary()
-        let currencylist: NSMutableArray = NSMutableArray()
+        let locations: NSMutableArray = NSMutableArray()
         
-        //for(var i = 0; i < jsonResult.count; i++){
-        for i in 0...4 {
+        for i in 0...4
+        {
             
             jsonElement = jsonResult[i] as! NSDictionary
             
-            let local = localmodel()
+            let location = LocationModel()
             
             //the following insures none of the JsonElement values are nil through optional binding
-            if  let date = jsonElement["date"] as? String,
-                let base = jsonElement["base"] as? String,
-                let tran = jsonElement["tran"] as? String,
-                let curr = jsonElement["curr"] as? NSNumber
+            if let name = jsonElement["date"] as? String,
+                let address = jsonElement["base"] as? String,
+                let latitude = jsonElement["transact"] as? String,
+                let longitude = jsonElement["currency"] as? NSNumber
             {
                 
-                local.date = date
-                local.base = base
-                local.tran = tran
-                local.curr = curr
+                location.name = name
+                location.address = address
+                location.latitude = latitude
+                location.longitude = longitude
                 
             }
             
-            currencylist.addObject(local)
-            
+            locations.addObject(location)
             
         }
         
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
             
-            self.delegate.itemsDownloaded(currencylist)
+            self.delegate.itemsDownloaded(locations)
             
         })
     }
 }
-
-
-
