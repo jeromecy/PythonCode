@@ -36,3 +36,47 @@ do {
 } catch {
     // Handle Error
 }
+
+
+
+
+var myvar=20
+let mar=20.0
+myvar=30
+
+let optionalInt: Int? = 9
+let actualInt: Int = optionalInt!
+
+
+let implicitInteger = 70
+let implicitDouble = 70.0
+let explicitDouble: Double = 70
+
+
+var st="ab"
+Int(st)
+
+let vegetable = "red pepper"
+switch vegetable {
+case "celery":
+    let vegetableComment = "Add some raisins and make ants on a log."
+case "cucumber", "watercress":
+    let vegetableComment = "That would make a good tea sandwich."
+case let x where x.hasSuffix("pepper"):
+    let vegetableComment = "Is it a spicy \(x)?"
+default:
+    let vegetableComment = "Everything tastes good in soup."
+}
+
+
+func greet(name: String, day: String) -> String {
+    return "Hello \(name), today is \(day)."
+}
+
+
+
+
+greet("a",day: "today")
+
+
+
