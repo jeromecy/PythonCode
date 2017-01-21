@@ -24,22 +24,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     
-    func itemsDownloaded(items: NSArray) {
+    func itemsDownloaded(_ items: NSArray) {
         
         feedItems = items
         self.listTableView.reloadData()
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of feed items
         return feedItems.count
         
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Retrieve cell
         let cellIdentifier: String = "basiccell"
-        let myCell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier)!
+        let myCell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)!
         // Get the location to be shown
         let item: LocationModel = feedItems[indexPath.row] as! LocationModel
         // Get references to labels of cell
