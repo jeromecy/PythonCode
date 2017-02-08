@@ -8,16 +8,21 @@ barplot(table(lotto$Power),axes=TRUE)
 
 pa<- lotto[,1:7]
 #test<- as.vector(as.matrix(pa[90,2:7]))
-myfa<- c(1,5,16,23,24,34)
-a=0
+myfa<- array(0,c(4,6))
+myfa[1,]<- c(1,5,12,23,24,34)
+myfa[2,]<- c(1,5,16,23,24,34)
+myfa[3,]<- c(8,15,18,27,29,36)
+myfa[4,]<- c(3,12,15,22,30,37)
+
+a=NULL
 for(i in 1:nrow(pa)){
 	#print(i)
-	if(mean(myfa==pa[i,2:6])==1){
-		a = pa[i,1]
-	}
+  for(j in 1:nrow(myfa)){
+	  if(length(intersect(myfa[j,],pa[i,2:6]))>3) a = c(a,i)
+  }
 }
 a
-
+pa[a,]
 
 
 #nrow(pa)
