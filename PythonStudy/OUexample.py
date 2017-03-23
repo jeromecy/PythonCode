@@ -42,7 +42,7 @@ for i_sim in range(num_sims):
         b = sigma(y[i-1], (i-1) * dt)
         y[i] = y[i-1] + a * dt + b * dW(dt)
     plt.plot(t, y)
-plt.savefig("UO.pdf")
+#plt.savefig("UO.pdf")
 plt.show()
 
 
