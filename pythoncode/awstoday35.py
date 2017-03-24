@@ -1,8 +1,8 @@
 import datetime
 import os, sys, string
 import socket
-#from DB import DB
-#import country
+#from DB import DB  ## database MySQL
+#import country  ### all countries.
 import urllib.request
 import urllib.parse
 import re
@@ -26,7 +26,8 @@ headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.11 (KHTML,
  'Accept-Charset':'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
  'Accept-Encoding':'gzip',
  'Connection':'close',
- 'Referer':None 
+ 'Referer':None,
+ 'X-Requested-With': 'XMLHttpRequest'
 }
 
 base = 'CNY'
@@ -72,19 +73,65 @@ for j in range(1):  #date from today to X days before
 
 
 
+json_url = 'http://www.unionpayintl.com/upiweb-card/serviceCenter/rate?curDate=2017-03-24&baseCurrency=CNY&transactionCurrency=NZD'
+
+r = requests.get(json_url).text
+
+from scrapy.spiders import CrawlSpider
+from scrapy.selector import Selector
+from scrapy.http import Request
+import requests
+import re, json
+
+import scrapy
 
 
+class unionpyItem(scrapy.Item):
+    baseCurrency        = scrapy.Field()
+    transactionCurrency = scrapy.Field()
+    exchangeRate        = scrapy.Field()
 
 
+class unionpayPipeline(object):
+    def process_item(self, item, spider):
+        return item
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+data = {'baseCurrency':"AUD",'createDate':1490284800000,
+        'createUser':55,'curDate':1490284800000,'exchangeRate':1.314720147,
+        'exchangeRateId':185401,'transactionCurrency':"USD",
+        'transactionCurrencyOption':'null',
+        'updateDate':1490284800000,'updateUser':55}
+    
+    
+jason_url = 'http://www.unionpayintl.com/upiweb-card/serviceCenter/rate/search'   
 
+url = 'http://www.unionpayintl.com/upiweb-card/serviceCenter/rate/search HTTP/1.1'  
 
-class Handler(BaseHandler):
-    def on_start(self):
-        self.crawl('http://www.unionpayintl.com/upiweb-card/serviceCenter/rate/search?type=movie&tag=%E7%83%AD%E9%97%A8&sort=recommend&page_limit=20&page_start=0',
-                   callback=self.json_parser)
-    def json_parser(self, response):
-        return [{
-            "baseCurrency": x['baseCurrency'],
-            "transactionCurrency": x['transactionCurrency'],
-            "url": x['url']
-        } for x in response.json['subjects']]
+url2 = 'http://www.unionpayintl.com/upiweb-card/serviceCenter/rate/search'
+   
+req = requests.post(url,data)
+
+req = requests.get(jason_url)
+
+req = requests.post(url2, data=data, headers=headers)    
+    
+    
+req  = urllib.request.Request(url = url,data = urllib.parse.urlencode(data),headers=headers)                
+           
+    
+    
+    
+    
+    
+    
+    
