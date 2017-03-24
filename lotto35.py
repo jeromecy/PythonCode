@@ -23,7 +23,7 @@ user_agent = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64)'
 headers = {'User-Agent': user_agent}
 
 #for NO in range(1513,1618):
-for NO in range(1618,1625):
+for NO in range(1625,1632):
     url = 'https://mylotto.co.nz/lotto/results/?draw='+str(NO)
     req = urllib.request.Request(url=url)                 
     
