@@ -37,6 +37,7 @@ headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.11 (KHTML,
 }
 '''
 
+'''
 new_headers = { 'Host': 'www.unionpayintl.com',
            'Proxy-Connection': 'keep-alive',
            'Content-Length': '59',
@@ -59,8 +60,7 @@ date      = today-deltadays
 
 session = requests.Session()
 
-
-for j in range(500,1001):  #date from today to X days before  0:1000
+for j in range(0,13):  #date from today to X days before  0:1000
     exRate    = ''
     deltadays = datetime.timedelta(days=j)
     date      = today - deltadays
@@ -74,8 +74,7 @@ for j in range(500,1001):  #date from today to X days before  0:1000
     file1  = open('unionpay.txt','a')
     file1.write(exRate +'\n') 
     file1.close()   
-    
-    
+'''   
 
 print('done')
 
@@ -86,7 +85,7 @@ plt.plot(rateData['rate'])
 #rateData = rateData.drop_duplicates('date')
 reversedData = rateData.iloc[::-1]  # reverse Data 
 #reversedData = rateData.sort_index(axis=0,ascending=False)
-reversedData.index = range(1001)
+reversedData.index = range(len(rateData))
 plt.plot(reversedData['rate'])
 plt.xticks([0,250,500,750,1000],[reversedData['date'][0],reversedData['date'][250],
            reversedData['date'][500],reversedData['date'][750],reversedData['date'][1000]])
