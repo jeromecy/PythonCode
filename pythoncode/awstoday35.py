@@ -16,7 +16,7 @@ import requests
 
 import pandas as pd
 import matplotlib.pyplot as plt
-
+import numpy as np
 
 
 socket.setdefaulttimeout(30)
@@ -26,7 +26,7 @@ ISOFORMAT='%Y-%m-%d'
 
 url = 'http://www.unionpayintl.com/upiweb-card/serviceCenter/rate/search'
 
-'''
+
 headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
  'Accept':'text/html;q=0.9,*/*;q=0.8',
  'Accept-Charset':'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
@@ -51,45 +51,76 @@ new_headers = { 'Host': 'www.unionpayintl.com',
             'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh-TW;q=0.4'
         }
 
-url = 'http://www.unionpayintl.com/upiweb-card/serviceCenter/rate/search'
-base = 'CNY'
-tran = 'NZD'
+url     = 'http://www.unionpayintl.com/upiweb-card/serviceCenter/rate/search'
+base    = 'CNY'
+tran    = 'NZD'
+address = 'C:/Users/zcao/Documents/unionpay/pythoncode/unionpay.txt'
 
-deltadays = datetime.timedelta(days=0)
-date      = today-deltadays
+
+rateData         = pd.read_table(address, sep=",")
+rateData.columns = ["date", "base", "tran", "rate"]
+sofar            = rateData['date'][0]
+rows             = len(rateData)
+
+#deltadays = datetime.timedelta(days=0)
+#date      = today-deltadays
 
 session = requests.Session()
 
-for j in range(0,13):  #date from today to X days before  0:1000
-    exRate    = ''
-    deltadays = datetime.timedelta(days=j)
-    date      = today - deltadays
+#for j in range(0,0):  #date from today to X days before  0:1000    
+j = 0
+deltadays = datetime.timedelta(days=j)
+date      = today - deltadays
+while(str(date) > sofar):
+    exRate    = ''    
     pop       = session.post(url , headers = new_headers , data = {
                 'curDate': date,
                 'baseCurrency': base,
                 'transactionCurrency': tran
-                })
-    
-    exRate = str(date) +','+ base +','+ tran +','+  str(pop.json()['exchangeRate'])           
-    file1  = open('unionpay.txt','a')
-    file1.write(exRate +'\n') 
-    file1.close()   
-'''   
+                })    
+    #exRate = str(date) +','+ base +','+ tran +','+  str(pop.json()['exchangeRate'])     
+    rateData.loc[rows+j] = [str(date),base,tran,str(pop.json()['exchangeRate'])]
+    #file1  = open(address,'a')
+    #file1.write(exRate +'\n') 
+    #file1.close() 
+    j = j + 1
+    deltadays = datetime.timedelta(days=j)
+    date      = today - deltadays
+
 
 print('done')
 
-rateData         = pd.read_table('unionpay.txt', sep=",")
-plt.plot(rateData['rate'])
-#rateData.columns = ["date", "CNY", "NZD", "rate"]
-#rateData[rateData.duplicated('date')==True]
-#rateData = rateData.drop_duplicates('date')
+rateData         = rateData.drop_duplicates('date')
+#rateData['date'] = pd.to_datetime(rateData.date)
+reversedData     = rateData.sort_values(by = 'date',ascending = 0)
+reversedData.index = range(len(reversedData))
+
+open(address, 'w').close()
+for ctr in range(len(reversedData)):
+    exRate = str(reversedData['date'].loc[ctr]) +','+ 'CNY'+','+ 'NZD'+','+ \
+                str(reversedData['rate'].loc[ctr])
+    file1  = open(address,'a')
+    file1.write(exRate +'\n') 
+    file1.close() 
+
+print('complete')
+
+
+rateData         = pd.read_table(address, sep=",")
+rateData.columns = ["date", "CNY", "NZD", "rate"]
+#plt.plot(rateData['rate'])
+rateData[rateData.duplicated('date')==True]
+rateData = rateData.drop_duplicates('date')
 reversedData = rateData.iloc[::-1]  # reverse Data 
-#reversedData = rateData.sort_index(axis=0,ascending=False)
+reversedData = rateData.sort_index(axis=0,ascending=False)
 reversedData.index = range(len(rateData))
 plt.plot(reversedData['rate'])
 plt.xticks([0,250,500,750,1000],[reversedData['date'][0],reversedData['date'][250],
            reversedData['date'][500],reversedData['date'][750],reversedData['date'][1000]])
 plt.show()
+
+
+
 
 ### this is an old method before system updating.
 '''
