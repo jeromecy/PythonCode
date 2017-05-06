@@ -16,7 +16,7 @@ import requests
 
 import pandas as pd
 import matplotlib.pyplot as plt
-import numpy as np
+#import numpy as np
 
 
 socket.setdefaulttimeout(30)
@@ -62,9 +62,6 @@ rateData.columns = ["date", "base", "tran", "rate"]
 sofar            = rateData['date'][0]
 rows             = len(rateData)
 
-#deltadays = datetime.timedelta(days=0)
-#date      = today-deltadays
-
 session = requests.Session()
 
 #for j in range(0,0):  #date from today to X days before  0:1000    
@@ -72,17 +69,14 @@ j = 0
 deltadays = datetime.timedelta(days=j)
 date      = today - deltadays
 while(str(date) > sofar):
-    exRate    = ''    
+    #exRate    = ''    
     pop       = session.post(url , headers = new_headers , data = {
                 'curDate': date,
                 'baseCurrency': base,
                 'transactionCurrency': tran
-                })    
+                })
     #exRate = str(date) +','+ base +','+ tran +','+  str(pop.json()['exchangeRate'])     
     rateData.loc[rows+j] = [str(date),base,tran,str(pop.json()['exchangeRate'])]
-    #file1  = open(address,'a')
-    #file1.write(exRate +'\n') 
-    #file1.close() 
     j = j + 1
     deltadays = datetime.timedelta(days=j)
     date      = today - deltadays
@@ -90,11 +84,12 @@ while(str(date) > sofar):
 
 print('done')
 
-rateData         = rateData.drop_duplicates('date')
+rateData           = rateData.drop_duplicates('date')
 #rateData['date'] = pd.to_datetime(rateData.date)
-reversedData     = rateData.sort_values(by = 'date',ascending = 0)
+reversedData       = rateData.sort_values(by = 'date',ascending = 0)
 reversedData.index = range(len(reversedData))
 
+exRate     = '' 
 open(address, 'w').close()
 for ctr in range(len(reversedData)):
     exRate = str(reversedData['date'].loc[ctr]) +','+ 'CNY'+','+ 'NZD'+','+ \
