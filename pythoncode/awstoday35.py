@@ -51,7 +51,8 @@ new_headers = { 'Host': 'www.unionpayintl.com',
             'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh-TW;q=0.4'
         }
 
-url     = 'http://www.unionpayintl.com/upiweb-card/serviceCenter/rate/search'
+#url     = 'http://www.unionpayintl.com/upiweb-card/serviceCenter/rate/search'
+url2    = 'http://www.unionpayintl.com/cardholderServ/serviceCenter/rate/search'
 base    = 'CNY'
 tran    = 'NZD'
 address = 'C:/Users/zcao/Documents/unionpay/pythoncode/unionpay.txt'
@@ -70,14 +71,14 @@ deltadays = datetime.timedelta(days=j)
 date      = today - deltadays
 while(str(date) > sofar):
     #exRate    = ''    
-    pop       = session.post(url , headers = new_headers , data = {
+    pop       = session.post(url2, headers = new_headers , data = {
                 'curDate': date,
                 'baseCurrency': base,
                 'transactionCurrency': tran
                 })
     #exRate = str(date) +','+ base +','+ tran +','+  str(pop.json()['exchangeRate'])     
     rateData.loc[rows+j] = [str(date),base,tran,str(pop.json()['exchangeRate'])]
-    j = j + 1
+    j+= 1
     deltadays = datetime.timedelta(days=j)
     date      = today - deltadays
 
