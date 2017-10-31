@@ -55,7 +55,7 @@ new_headers = { 'Host': 'www.unionpayintl.com',
 url2    = 'http://www.unionpayintl.com/cardholderServ/serviceCenter/rate/search'
 base    = 'CNY'
 tran    = 'NZD'
-address = 'C:/Users/zcao/Documents/unionpay/pythoncode/unionpay.txt'
+address = 'C:/Users/zcao/Documents/PythonCode/UnionPay/unionpay.txt'
 
 
 rateData         = pd.read_table(address, sep=",")

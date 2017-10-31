@@ -18,7 +18,7 @@ headers       = {'User-Agent': user_agent}
 datahead      = ['DrawNumber','Number1','Number2','Number3','Number4','Number5',\
                 'Number6','Bonus','Power']
 
-address       = 'C:/Users/zcao/Documents/unionpay/lotto.txt'
+address       = 'C:/Users/zcao/Documents/PythonCode/Lotto/lotto.txt'
 lotto         = pd.read_table(address, sep=",",header=None)
 lotto.columns = datahead
 sofar         = lotto['DrawNumber'][0]
