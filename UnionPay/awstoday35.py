@@ -66,7 +66,7 @@ rows             = len(rateData)
 session = requests.Session()
 
 #for j in range(0,0):  #date from today to X days before  0:1000    
-j = 0
+j = 1
 deltadays = datetime.timedelta(days=j)
 date      = today - deltadays
 while(str(date) > sofar):
@@ -113,7 +113,7 @@ reversedData.index = range(len(rateData))
 plt.plot(reversedData['rate'])
 plt.xticks([0,250,500,750,1000],[reversedData['date'][0],reversedData['date'][250],
            reversedData['date'][500],reversedData['date'][750],reversedData['date'][1000]])
-plt.show()
+plt.savefig('timeseries.pdf')
 
 
 

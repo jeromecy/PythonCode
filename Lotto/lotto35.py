@@ -38,7 +38,7 @@ new_headers = { 'Host': 'apigw.mylotto.co.nz',
             'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh-TW;q=0.4'
         }
 
-thisnumber = 1694
+thisnumber = 1718
 counts = 0
 while(thisnumber > sofar):
     numbers  = []
