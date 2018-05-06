@@ -16,7 +16,7 @@ import requests
 
 import pandas as pd
 import matplotlib.pyplot as plt
-#import numpy as np
+import numpy as np
 
 
 socket.setdefaulttimeout(30)
@@ -52,11 +52,12 @@ new_headers = { 'Host': 'www.unionpayintl.com',
         }
 
 #url     = 'http://www.unionpayintl.com/upiweb-card/serviceCenter/rate/search'
+#url2    = 'http://www.unionpayintl.com/cardholderServ/serviceCenter/rate/search'
 url2    = 'http://www.unionpayintl.com/cardholderServ/serviceCenter/rate/search'
 base    = 'CNY'
 tran    = 'NZD'
-address = 'C:/Users/zcao/Documents/PythonCode/UnionPay/unionpay.txt'
-
+#address = 'C:/Users/zcao/Documents/PythonCode/UnionPay/unionpay.txt'
+address = '/Users/jeromecao/Documents/Personal/Unionpay/UnionPay/unionpay.txt'
 
 rateData         = pd.read_table(address, sep=",")
 rateData.columns = ["date", "base", "tran", "rate"]
@@ -66,12 +67,14 @@ rows             = len(rateData)
 session = requests.Session()
 
 #for j in range(0,0):  #date from today to X days before  0:1000    
+'''
 j = 1
-deltadays = datetime.timedelta(days=j)
+deltadays = datetime.timedelta(days=1)
 date      = today - deltadays
 while(str(date) > sofar):
-    #exRate    = ''    
-    pop       = session.post(url2, headers = new_headers , data = {
+    if(date.weekday()<5):
+        #exRate    = ''    
+        pop     = session.post(url2, headers = new_headers , data = {
                 'curDate': date,
                 'baseCurrency': base,
                 'transactionCurrency': tran
@@ -81,8 +84,24 @@ while(str(date) > sofar):
     j+= 1
     deltadays = datetime.timedelta(days=j)
     date      = today - deltadays
-
-
+'''
+j     = 1
+sofar = datetime.datetime.strptime(sofar, "%Y-%m-%d").date()
+date  = sofar + datetime.timedelta(days=1)
+while(date <= today):
+    if(date.weekday()<5):
+        #exRate    = ''    
+        pop     = session.post(url2, headers = new_headers , data = {
+                'curDate': str(date),
+                'baseCurrency': base,
+                'transactionCurrency': tran
+                })
+    #exRate = str(date) +','+ base +','+ tran +','+  str(pop.json()['exchangeRate'])     
+    rateData.loc[rows+j] = [str(date),base,tran,str(pop.json()['exchangeRate'])]
+    j+= 1
+    date  = date + datetime.timedelta(days=1)
+    
+    
 print('done')
 
 rateData           = rateData.drop_duplicates('date')
@@ -110,9 +129,17 @@ rateData = rateData.drop_duplicates('date')
 reversedData = rateData.iloc[::-1]  # reverse Data 
 reversedData = rateData.sort_index(axis=0,ascending=False)
 reversedData.index = range(len(rateData))
+
+k = np.arange(0, reversedData.shape[0], 270)
+
 plt.plot(reversedData['rate'])
-plt.xticks([0,250,500,750,1000],[reversedData['date'][0],reversedData['date'][250],
-           reversedData['date'][500],reversedData['date'][750],reversedData['date'][1000]])
+plt.xticks(k,reversedData['date'][k])
+'''
+plt.plot(reversedData['rate'])
+plt.xticks([0,250,500,750,1000,1500],[reversedData['date'][0],reversedData['date'][250],
+           reversedData['date'][500],reversedData['date'][750],reversedData['date'][1000],
+           reversedData['date'][1200]])
+'''
 plt.savefig('timeseries.pdf')
 
 
