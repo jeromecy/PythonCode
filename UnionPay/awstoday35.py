@@ -35,9 +35,7 @@ headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.11 (KHTML,
  'Referer':None,
  'X-Requested-With': 'XMLHttpRequest'
 }
-'''
 
-'''
 new_headers = { 'Host': 'www.unionpayintl.com',
            'Proxy-Connection': 'keep-alive',
            'Content-Length': '59',
@@ -56,8 +54,8 @@ new_headers = { 'Host': 'www.unionpayintl.com',
 url2    = 'http://www.unionpayintl.com/cardholderServ/serviceCenter/rate/search'
 base    = 'CNY'
 tran    = 'NZD'
-#address = 'C:/Users/zcao/Documents/PythonCode/UnionPay/unionpay.txt'
-address = '/Users/jeromecao/Documents/Personal/Unionpay/UnionPay/unionpay.txt'
+address = 'C:/Users/zcao/Documents/PythonCode/UnionPay/unionpay.txt'
+#address = '/Users/jeromecao/Documents/Personal/Unionpay/UnionPay/unionpay.txt'
 
 rateData         = pd.read_table(address, sep=",")
 rateData.columns = ["date", "base", "tran", "rate"]
@@ -88,7 +86,7 @@ while(str(date) > sofar):
 j     = 1
 sofar = datetime.datetime.strptime(sofar, "%Y-%m-%d").date()
 date  = sofar + datetime.timedelta(days=1)
-while(date <= today):
+while(date < today):
     if(date.weekday()<5):
         #exRate    = ''    
         pop     = session.post(url2, headers = new_headers , data = {
@@ -145,7 +143,7 @@ plt.savefig('timeseries.pdf')
 
 
 
-### this is an old method before system updating.
+### this is an old method before system upgraded.
 '''
 deltadays = datetime.timedelta(days=0)
 date      = today-deltadays

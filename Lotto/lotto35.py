@@ -18,8 +18,8 @@ headers       = {'User-Agent': user_agent}
 datahead      = ['DrawNumber','Number1','Number2','Number3','Number4','Number5',\
                 'Number6','Bonus','Power']
 
-#address       = 'C:/Users/zcao/Documents/PythonCode/Lotto/lotto.txt'
-address       = '/Users/jeromecao/Documents/Personal/Unionpay/Lotto/lotto.txt'
+address       = 'C:/Users/zcao/Documents/PythonCode/Lotto/lotto.txt'
+#address       = '/Users/jeromecao/Documents/Personal/Unionpay/Lotto/lotto.txt'
 lotto         = pd.read_table(address, sep=",",header=None)
 lotto.columns = datahead
 sofar         = lotto['DrawNumber'][0]
@@ -39,11 +39,13 @@ new_headers = { 'Host': 'apigw.mylotto.co.nz',
             'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh-TW;q=0.4'
         }
 
-thisnumber = 1748
+thisnumber = 1780
 counts = 0
+'''
 while(thisnumber > sofar):
     numbers  = []
     url      = 'https://apigw.mylotto.co.nz/api/results/v1/results/lotto/'+str(thisnumber)
+    # https://apigw.mylotto.co.nz/api/results/v1/results/lotto/1780
     req      = urllib.request.Request(url=url)
     response = urllib.request.urlopen(req)
     page     = response.read().decode('utf-8')
@@ -65,6 +67,33 @@ while(thisnumber > sofar):
     print(thisnumber)
       
 print("work done")
+'''
+while(thisnumber > sofar):
+    numbers  = []
+    url      = 'https://apigw.mylotto.co.nz/api/results/v1/results/lotto/'+str(thisnumber)
+    req      = urllib.request.Request(url=url)
+    response = urllib.request.urlopen(req)
+    page     = response.read().decode('utf-8')
+    regex1   = '"numbers":(.*?),"bonusBalls"'
+    regex2   = '"bonusBalls":"(.*?)"},'
+    regex3   = '"powerballWinningNumber":"(.*?)","powerballWinners"'
+    pattern  = re.compile(regex1)
+    numlist  = re.findall(r'\d+', re.findall(pattern,page)[0].strip('[]'))
+    numbers  = numlist[0:5]
+    pattern  = re.compile(regex2)
+    numbers.extend(list(re.findall(pattern,page)[0]))
+    pattern  = re.compile(regex3)
+    numbers.extend(re.findall(pattern,page))    
+    #print(numbers)   
+    #print(thisnumber)
+    numbers.insert(0,thisnumber)
+    lotto.loc[rows + counts] = numbers
+    counts += 1
+    thisnumber = thisnumber - 1
+    print(thisnumber)
+      
+print("work done")
+
 
 lotto              = lotto.drop_duplicates('DrawNumber')
 reverselotto       = lotto.sort_values(by = 'DrawNumber',ascending = 0)
