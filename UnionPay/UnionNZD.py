@@ -52,13 +52,12 @@ new_headers = { 'Host': 'www.unionpayintl.com',
 #url     = 'http://www.unionpayintl.com/upiweb-card/serviceCenter/rate/search'
 #url2    = 'http://www.unionpayintl.com/cardholderServ/serviceCenter/rate/search'
 url2    = 'http://www.unionpayintl.com/cardholderServ/serviceCenter/rate/search'
-base    = 'CNY'
-tran    = 'NZD'
-address = 'C:/Users/zcao/Documents/PythonCode/UnionPay/unionpay.txt'
+base    = "CNY"
+tran    = "NZD"
+#address = 'C:/Users/zcao/Documents/PythonCode/UnionPay/unionpay.txt'
 #address = '/Users/jeromecao/Documents/Personal/Unionpay/UnionPay/unionpay.txt'
-
-rateData         = pd.read_table(address, sep=",")
-rateData.columns = ["date", "base", "tran", "rate"]
+address = 'C:/Users/279302D/OneDrive - Curtin/Documents/Personal/Python/UnionPay/unionpay.txt'
+rateData         = pd.read_table(address, sep=",",names = ["date", "base", "tran", "rate"])
 sofar            = rateData['date'][0]
 rows             = len(rateData)
 
@@ -95,10 +94,15 @@ while(date < today):
                 'transactionCurrency': tran
                 })
     #exRate = str(date) +','+ base +','+ tran +','+  str(pop.json()['exchangeRate'])     
-    rateData.loc[rows+j] = [str(date),base,tran,str(pop.json()['exchangeRate'])]
+    try:
+        pop.json()
+        rateData.loc[rows+j] = [str(date),base,tran,str(pop.json()['exchangeRate'])]
+    except ValueError:
+        print('Decoding JSON has failed')
+        rateData.loc[rows+j] = [str(date),base,tran,rateData.loc[rows+j-1]['rate']]
+  
     j+= 1
     date  = date + datetime.timedelta(days=1)
-    
     
 print('done')
 
