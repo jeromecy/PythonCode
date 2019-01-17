@@ -27,9 +27,9 @@ url     = 'http://www.unionpayintl.com/cardholderServ/serviceCenter/rate/search'
 base    = "CNY"
 tran    = "AUD"
 address = 'C:/Users/279302D/OneDrive - Curtin/Documents/Personal/Python/UnionPay/aud.txt'
-rateData         = pd.read_table(address, sep=",",names = ["date", "base", "tran", "rate"])
-sofar            = rateData['date'][0]
-rows             = len(rateData)
+rateData = pd.read_table(address, sep=",",names = ["date", "base", "tran", "rate"])
+sofar    = rateData['date'][0]
+rows     = len(rateData)
 
 session = requests.Session()
 
