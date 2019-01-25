@@ -87,5 +87,5 @@ k = np.arange(0, reversedData.shape[0], 270)
 
 plt.plot(reversedData['rate'])
 plt.xticks(k,reversedData['date'][k])
-plt.savefig('AUD.pdf')
+plt.savefig('figAUD.pdf')
 

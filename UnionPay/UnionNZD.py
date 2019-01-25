@@ -142,7 +142,7 @@ plt.xticks([0,250,500,750,1000,1500],[reversedData['date'][0],reversedData['date
            reversedData['date'][500],reversedData['date'][750],reversedData['date'][1000],
            reversedData['date'][1200]])
 '''
-plt.savefig('timeseries.pdf')
+plt.savefig('figNZD.pdf')
 
 
 
